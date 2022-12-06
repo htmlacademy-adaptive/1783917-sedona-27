@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Lena Smirnova](https://up.htmlacademy.ru/adaptive/27/user/1783917).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Зиновьев`(https://htmlacademy.ru/profile/id198751).
 
 ---
 
