@@ -42,7 +42,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <h1 class="main-container-title">Добро пожаловать в Седону</h1>
     <div class="container-wrapper">
       <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Sedona logotype.">
 
@@ -58,6 +58,7 @@
       </header>
     </section>
     <section class="photo">
+      <h2 class="photo-title">Фото</h2>
       <div class="photo__wrapper">
         <ul class="photo__card__list">
           <li class="photo__card__item">
@@ -67,7 +68,7 @@
               Неродные просторы
             </h2>
             <p>Автор фото: Борис</p>
-            <span>1350</span>
+            <span class="visually-hidden">Счётчик лайков<span>1350</span></span>
           </li>
           <li class="photo__card__item">
             <img class="photo__catalog" src="img/photo-2-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
@@ -76,7 +77,9 @@
               Местная растительность
             </h2>
             <p>Автор фото: Сергей</p>
-            <span>143</span>
+            <span class="visually-hidden">Счётчик лайков
+              <span>143</span>
+            </span>
           </li>
           <li class="photo__card__item">
             <img class="photo__catalog" src="img/photo-3-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
@@ -85,7 +88,9 @@
               Дорога на север
             </h2>
             <p>Автор фото: Петр</p>
-            <span>96</span>
+            <span class="visually-hidden">Счётчик лайков
+              <span>96</span>
+            </span>
           </li>
           <li class="photo__card__item">
             <img class="photo__catalog" src="img/photo-4-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
@@ -94,16 +99,19 @@
               Мост дьявола
             </h2>
             <p>Автор фото: Антон</p>
-            <span>254</span>
+            <span class="visually-hidden">Счётчик лайков
+              <span>254</span>
+            </span>
           </li>
         </ul>
       </div>
 
     </section>
     <section class="video">
+      <h2 class="vissualy-hidden">Видео</h2>
       <div class="video__wrapper">
-        <h2 class="video__title">Все еще сомневаетесь?
-        </h2>
+        <p class="video__title">Все еще сомневаетесь?
+        </p>
         <p class="video__description">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
@@ -112,32 +120,41 @@
       </div>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
-          <h2 class="main-footer__title">#VISITSEDONA</h2>
-        </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-                Ютубе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">
-              HTML Academy. </span>
-          </a>
-        </div>
+
+      <div class="main-footer__hashtag">
+
+        <a href="#">#VISITSEDONA</a>
       </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано:
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+            <svg class="icon-html-academy" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.134 2h-.09L4 3.19v21.007L16.045 31 28 24.197V3.19L16.134 2Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L5.696 12.29V4.636l10.26-1.02 10.349 1.02v7.654ZM15.956 7.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L8.818 19.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">
+              "Логотип HTML Academy" </span>
+          </a>
+        </p>
+      </div>
+
     </footer>
   </main>
 </body>

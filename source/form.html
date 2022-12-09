@@ -47,138 +47,126 @@
       <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Sedona logotype.">
 
     </div>
-    <section class="intro">
-      <header class="intro__header">
-        <h2 class="intro__title">
+    <section class="review">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <header class="review__header description">
+        <h2 class="description__title">
           Оставьте свой отзыв
         </h2>
-        <p class="intro__desription">
+        <p class="description__subtitle">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </header>
-
-    </section>
-    <section class="form">
-      <h2 class="form__title">
-        Представьтесь:
-      </h2>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
-        <label for="user-field-id" class="name">ИМЯ*:
-          <input class="field" placeholder="Петр" type="text" name="Петр" id="user-field-id" required>
-        </label>
-        <label for="surname" class="name">ФАМИЛИЯ*:
-          <input class="field" placeholder="Пустота" type="text" name="Петр" id="surname" required>
-        </label>
-        <label for="patronymic" class="name">ОТЧЕСТВО*:
-          <input class="field" placeholder="Викторович" type="text" name="Петр" id="patronymic" required>
-        </label>
-      </form>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">
-          Контактная информация:
-        </h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <label for="phone" class="contacts__phone">Контактный телефон*:
-            <input class="field" placeholder="Введите телефон" type="text" name="Введите телефон" id="phone" required>
-          </label>
-          <label for="e-mail" class="contacts__e-mail">Электронная почта*:
-            <input class="field" placeholder="Введите e-mail" type="text" name="Введите e-mail" id="e-mail" required>
-          </label>
-        </form>
-      </div>
 
-    </section>
-    <section class="radiobuttons">
-      <div class="radiobuttons__wrapper">
-        <h2 class="visually-hidden" hidden>Список чекбоксов-радиокнопок</h2>
-        <form class="email" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="radiobuttons__group">
-            <legend class="radiobuttons__title">Ваше общее впечатление:</legend>
-            <ul class="radiobuttons__list">
-              <li class="radiobuttons__item">
+        <fieldset class="review__field-group">
+          <h2 class="review__title">
+            Представьтесь:
+          </h2>
 
-                <label class="control">
-                  <input class="control__input" type="radio" name="radio-input" value="Скорее положительное" checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="radiobuttons__item">
-                <label class="control">
-                  <input class="control__input" type="radio" name="radio-input" value="Скорее отрицательное">
-                  <span class="control__mark"></span>
-                  <span class="control__label">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="radiobuttons__item">
-                <label class="control">
-                  <input class="control__input" type="radio" name="radio-input" value="Затрудняюсь ответить">
-                  <span class="control__mark"></span>
-                  <span class="control__label">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </div>
-    </section>
-    <section class="checkboxes">
-      <div class="checkboxes__wrapper">
-        <h2 class="visually-hidden" hidden>Посещенные достопримечательности</h2>
-        <form class="email" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="checkboxes__group">
-            <legend class="checkboxes__title">Посещенные достопримечательности:</legend>
-            <ul class="checkboxes__list">
-              <li class="checkboxes__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="Мост Дьявола" checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="checkboxes__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="Гора-Колокол" checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="checkboxes__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="Слайд-парк" checked>
-                  <span class="control__mark"></span>
-                  <span class="control__label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="checkboxes__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="Красные скалы">
-                  <span class="control__mark"></span>
-                  <span class="control__label">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__title">Опишите свои эмоции:</h2>
-        <form class="email" action="https://echo.htmlacademy.ru/" method="post">
+
+          <label for="user-field-id" class="name">ИМЯ*:
+            <input class="field" placeholder="Петр" type="text" name="name" value="Петр" id="user-field-id" required>
+          </label>
+          <label for="surname" class="name">ФАМИЛИЯ*:
+            <input class="field" placeholder="Пустота" type="text" name="surname" value="Пустота" id="surname" required>
+          </label>
+          <label for="patronymic" class="name">ОТЧЕСТВО*:
+            <input class="field" placeholder="Викторович" type="text" value="Викторович" name="patronymic"
+              id="patronymic" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="review__field-group">
+          <h2 class="review__title">
+            Контактная информация:
+          </h2>
+
+          <label for="phone" class="review__control">Контактный телефон*:
+            <input class="field" placeholder="Введите телефон" type="text" name="contact-phone" id="phone" required>
+          </label>
+          <label for="e-mail" class="review__control">Электронная почта*:
+            <input class="field" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="review__field-group">
+          <legend class="review__title">Ваше общее впечатление:</legend>
+          <ul class="review__list">
+            <li class="review__item">
+
+              <label class="control">
+                <input class="control__input" type="radio" name="impression" value="Скорее положительное" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="impression" value="Скорее отрицательное">
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="impression" value="Затрудняюсь ответить">
+                <span class="control__mark"></span>
+                <span class="control__label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="review__field-group">
+
+          <legend class="review__title">Посещенные достопримечательности:</legend>
+          <ul class="review__list">
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="bridge-devil" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="mount-bell" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="slide-park" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="review__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="red-rocks">
+                <span class="control__mark"></span>
+                <span class="control__label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="review__field-group">
+          <h2 class="review__title">Опишите свои эмоции:</h2>
+
           <label for="textarea" class="visually-hidden" hidden>reviews</label>
-          <textarea name="Опишите подробно все свои восторги" id="textarea"
-            required> Опишите подробно все свои восторги </textarea>
-          <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <p class="reviews__legend">
-            <small>
-              * — обязательные поля
-            </small>
-          </p>
-        </form>
-      </div>
+          <textarea name="reviews-comment" id="textarea" required> Опишите подробно все свои восторги </textarea>
+        </fieldset>
+        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="review__note">
+          <small>
+            * — обязательные поля
+          </small>
+        </p>
+      </form>
+
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -200,11 +188,19 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">
-              HTML Academy. </span>
-          </a>
+          <p class="copyright__text">Разработано:
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+              <svg class="icon-html-academy" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.134 2h-.09L4 3.19v21.007L16.045 31 28 24.197V3.19L16.134 2Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L5.696 12.29V4.636l10.26-1.02 10.349 1.02v7.654ZM15.956 7.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L8.818 19.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z"
+                  fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">
+                "Логотип HTML Academy" </span>
+            </a>
+          </p>
         </div>
       </div>
     </footer>
