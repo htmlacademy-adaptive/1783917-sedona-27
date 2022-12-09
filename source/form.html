@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Html Academy: Седона</title>
 </head>
 
 <body class="page__body">
@@ -32,7 +32,7 @@
           </li>
           <li class="site-list__item">
             <a href="#">
-              HTML ACADEMY
+              Html Academy
             </a>
           </li>
         </ul>
@@ -48,7 +48,6 @@
 
     </div>
     <section class="review">
-      <h2 class="visually-hidden">Форма отзыва</h2>
       <header class="review__header description">
         <h2 class="description__title">
           Оставьте свой отзыв
@@ -60,27 +59,27 @@
       <form action="https://echo.htmlacademy.ru/courses" method="get">
 
         <fieldset class="review__field-group">
-          <h2 class="review__title">
+          <legend class="review__title">
             Представьтесь:
-          </h2>
+          </legend>
 
 
-          <label for="user-field-id" class="name">ИМЯ*:
-            <input class="field" placeholder="Петр" type="text" name="name" value="Петр" id="user-field-id" required>
+          <label for="user-field-id" class="name">Имя*:
+            <input class="field" placeholder="Имя" type="text" name="name" value="Петр" id="user-field-id" required>
           </label>
-          <label for="surname" class="name">ФАМИЛИЯ*:
-            <input class="field" placeholder="Пустота" type="text" name="surname" value="Пустота" id="surname" required>
+          <label for="surname" class="name">Фамилия*:
+            <input class="field" placeholder="Фамилия" type="text" name="surname" value="Пустота" id="surname" required>
           </label>
-          <label for="patronymic" class="name">ОТЧЕСТВО*:
-            <input class="field" placeholder="Викторович" type="text" value="Викторович" name="patronymic"
+          <label for="patronymic" class="name">Отчество*:
+            <input class="field" placeholder="Отчество" type="text" value="Викторович" name="patronymic"
               id="patronymic" required>
           </label>
         </fieldset>
 
         <fieldset class="review__field-group">
-          <h2 class="review__title">
+          <legend class="review__title">
             Контактная информация:
-          </h2>
+          </legend>
 
           <label for="phone" class="review__control">Контактный телефон*:
             <input class="field" placeholder="Введите телефон" type="text" name="contact-phone" id="phone" required>
@@ -96,21 +95,21 @@
             <li class="review__item">
 
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="Скорее положительное" checked>
+                <input class="control__input" type="radio" name="impression" value="rather positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="Скорее отрицательное">
+                <input class="control__input" type="radio" name="impression" value="rather negative">
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="Затрудняюсь ответить">
+                <input class="control__input" type="radio" name="impression" value="unknown">
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
@@ -154,12 +153,12 @@
         </fieldset>
 
         <fieldset class="review__field-group">
-          <h2 class="review__title">Опишите свои эмоции:</h2>
+          <legend class="review__title">Опишите свои эмоции:</legend>
 
           <label for="textarea" class="visually-hidden" hidden>reviews</label>
           <textarea name="reviews-comment" id="textarea" required> Опишите подробно все свои восторги </textarea>
         </fieldset>
-        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="button" type="submit">Отправить отзыв</button>
         <p class="review__note">
           <small>
             * — обязательные поля
@@ -171,7 +170,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__hashtag">
-          <h2 class="main-footer__title">#VISITSEDONA</h2>
+          <h2 class="main-footer__title">#Visitsedona</h2>
         </div>
         <div class="main-footer__social social">
           <ul class="social__list">
@@ -187,9 +186,9 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано:
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="main-footer__info">
+          <p class="main-footer__info-text">Разработано:
+            <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
 
               <svg class="icon-html-academy" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +197,7 @@
                   fill="currentColor" />
               </svg>
               <span class="visually-hidden">
-                "Логотип HTML Academy" </span>
+                "Логотип Html Academy" </span>
             </a>
           </p>
         </div>
@@ -206,7 +205,7 @@
     </footer>
     <section class="modal modal--failure">
       <div class="modal__container modal__container--close">
-        <h2 class="modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <h2 class="modal__title">Что-то пошло не так!</h2>
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal__description">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
