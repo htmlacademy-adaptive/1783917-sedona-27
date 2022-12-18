@@ -1,0 +1,198 @@
+.checkboxes {
+  width: 320px;
+  margin: 0 auto;
+  padding: 4px 12px 20px 20px;
+  box-sizing: border-box;
+  height: 327px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes {
+    width: 768px;
+    margin: 0 auto;
+    height: 257px;
+    border-bottom: none;
+    padding: 26px 23px 19px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes {
+    width: 1200px;
+    margin: 0 auto;
+    height: 257px;
+    border-bottom: none;
+    padding: 26px 23px 19px;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+  }
+}
+
+.checkboxes__title {
+  margin: 0;
+  padding: 0 10px;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes__title {
+    width: 308px;
+    margin: 0 auto;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes__title {
+    width: 308px;
+    margin: 0 auto;
+    padding-bottom: 53px;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 53px;
+  }
+}
+
+.checkboxes__group {
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.checkboxes__list {
+  list-style: none;
+  width: 320px;
+  margin: 0;
+  padding: 17px 18px 10px 40px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 0 auto;
+    padding: 17px 14px 10px 21px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 0 auto;
+    padding: 17px 14px 10px 21px;
+    box-sizing: border-box;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 912px;
+      margin: 0 auto;
+      padding: 17px 14px 10px 21px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.checkboxes__wrapper {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes__wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes__wrapper {
+    width: 871px;
+    height: 134px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes__item {
+    width: 190px;
+  }
+}
+
+.checkboxes__item {
+  padding-bottom: 36px;
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes__item--rocks {
+    margin-left: -17px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0 auto;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 242);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark:hover {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0 auto;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(229, 229, 229);
+}
+
+.control__input[type="checkbox"]:active + .control__mark {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 30%;
+  padding: 0 auto;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 242);
+}
+
+.control__input[type="checkbox"] + .control__mark:active {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  /*background-size: 26px 16px;*/
+  padding: 0 auto;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(213, 213, 213);
+}

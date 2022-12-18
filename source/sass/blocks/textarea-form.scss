@@ -1,0 +1,30 @@
+.textarea-form .reviews-button {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 18px 48px 13px 48px;
+  color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea-form .reviews-button {
+    padding: 18px 78px 13px 66px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-form .reviews-button {
+    padding: 22px 108px 13px 95px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,123 @@
+.video {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 19px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .video__wrapper {
+    width: 648px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 62px;
+  }
+}
+
+.video__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 27px;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .video__title {
+    margin: 0 auto;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__title {
+    margin: 0 auto;
+    padding: 0;
+    font-family: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 33px;
+  }
+}
+
+.video__description {
+  margin: 0 auto;
+  padding: 0 23px 38px 21px;
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .video__description {
+    width: 445px;
+    margin: 0;
+    padding: 0 100px 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__description {
+    width: 445px;
+    margin: 0 auto;
+  }
+}
+
+.video-preview {
+  width: 280px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  height: 177px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-preview {
+    width: 648px;
+    height: 500px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-preview {
+    width: 800px;
+    margin-bottom: 79px;
+  }
+}
+
+.video-button {
+  position: absolute;
+  display: block;
+  left: 281px;
+  bottom: -1126px;
+  cursor: pointer;
+}
+
+.button-video {
+  border: none;
+}

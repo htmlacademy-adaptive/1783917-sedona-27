@@ -1,0 +1,25 @@
+.photo-name {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+  font-family: $title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-name:nth-child(1) {
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-name {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,23 @@
+.main-header {
+  background-color: #ffffff;
+  color: #888897;
+  text-align: center;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__logo {
+  height: 96px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 96px;
+    z-index: 10;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 96px;
+    z-index: 10;
+  }
+}

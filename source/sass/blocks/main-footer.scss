@@ -1,0 +1,125 @@
+.main-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.main-footer__wrapper {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+  height: 243px;
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    height: 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding: 20px 117px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 120px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+.main-footer__hashtag {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 93px;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__title {
+    padding-top: 26px;
+  }
+}
+
+.main-footer__info-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 95px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 15px;
+    width: 145px;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.icon-html-academy {
+  display: block;
+  color: #000000;
+  padding-left: 3px;
+}
+
+/*CТИЛИ ПРИ НАВЕДЕНИИ -HOVER*/
+.icon-html-academy:hover {
+  color: rgb(129, 179, 210);
+}
+
+.main-footer__info-text:hover {
+  color: rgb(129, 179, 210);
+}
+
+.main-footer__info-text:hover svg {
+  color: rgb(129, 179, 210);
+}
+
+/*CТИЛИ ПРИ КЛИКЕ -COPYRIGHT*/
+.main-footer__info-text:active svg {
+  color: rgb(179, 179, 179);
+}
+
+.main-footer__info-text:active {
+  color: rgb(179, 179, 179);
+}

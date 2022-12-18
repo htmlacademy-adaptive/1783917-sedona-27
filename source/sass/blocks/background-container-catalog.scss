@@ -1,0 +1,92 @@
+.background-container-catalog {
+  background-image: url("../img/index-background.jpg");
+  background-color: #3f5e72;
+  background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
+  background-position: bottom right;
+  height: 157px;
+  margin-top: 13px;
+  margin-bottom: 1px;
+
+  ::after {
+    display: block;
+    content: "";
+    background-image: url("../img/intro-triangle-desktop-catalog.svg");
+    //background-image: url("../img/intro-triangle-desktop-catalog.svg");
+    width: 320px;
+    height: 57px;
+    top: -62px;
+    bottom: 96px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .background-container-catalog {
+    background-image: url("../img/back-tablet-catalog-form.jpg.jpg");
+    width: 768px;
+    margin: 0 auto;
+    height: 346px;
+    background-position: top;
+    margin-bottom: 28px;
+
+    ::after {
+      display: block;
+      content: "";
+      background-image: url("../img/intro-triangle-desktop-catalog.svg");
+      width: 768px;
+      height: 57px;
+      top: 54px;
+      bottom: 96px;
+      left: -155px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .background-container-catalog {
+    background-image: url("../img/back-desktop-catalog-form.jpg.jpg");
+    width: 1200px;
+    height: 357px;
+    margin-bottom: 61px;
+
+    ::after {
+      display: block;
+      content: "";
+      background-image: url("../img/intro-triangle-desktop-catalog.svg");
+      width: 1200px;
+      height: 57px;
+      top: 59px;
+      bottom: 96px;
+      left: -368px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .background-container-form {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .background-container-form {
+    margin-bottom: 116px;
+  }
+}

@@ -1,0 +1,27 @@
+.textarea {
+  background-color: $form;
+  width: 279px;
+  height: 150px;
+  border: none;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    width: 648px;
+    height: 160px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    width: 768px;
+    height: 160px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 48px;
+    justify-content: flex-end;
+  }
+}
