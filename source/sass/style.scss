@@ -1,1 +1,47 @@
-// Начните писать стили здесь
+// Viewports
+@import "./blocks/global/global.scss";
+// Blocks
+@import "./blocks/main-header.scss";
+@import "./blocks/blue-background.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/search.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/review__field-group.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/radiobuttons.scss";
+@import "./blocks/checkboxes.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/video.scss";
+@import "./blocks/social__list.scss";
+@import "./blocks/name.scss";
+@import "./blocks/index-container-wrapper.scss";
+@import "./blocks/contacts-form.scss";
+@import "./blocks/background-container-catalog.scss";
+@import "./blocks/main-picture-welcome-text.scss";
+@import "./blocks/container-wrapper.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/pic.scss";
+@import "./blocks/photo-name.scss";
+@import "./blocks/control.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/textarea-form.scss";
+@import "./blocks/button-search.scss";
+@import "./blocks/field.scss";
+@import "./blocks/form-field.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/fonts.scss";
+@import "./blocks/review.scss";
+@import "./blocks/description.scss";
+
+body {
+  //background-color: rgb(235, 25, 190); //
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

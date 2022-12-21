@@ -1,0 +1,59 @@
+.button-search {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 47px;
+  background-color: $accent;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+.button-search:hover {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 47px;
+  background-color: rgb(102, 158, 192);
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+.button-search:active {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 47px;
+  background-color: rgb(84, 150, 189);
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+.button-search:disabled {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 47px;
+  background-color: rgb(229, 229, 229);
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}

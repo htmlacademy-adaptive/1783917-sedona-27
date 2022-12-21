@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Html Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -11,38 +13,40 @@
     <a class="main-header__logo">
       <img src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--currrent">
-            <a>
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__link--active">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link site-list__photo" href="photo.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link site-list__feedback" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link site-list__academy" href="#">
               Html Academy
             </a>
           </li>
         </ul>
         <div class="main-nav__list user-list">
         </div>
+
       </div>
     </nav>
-    <div class="container-wrapper">
+    <div class="background-container-catalog ">
+    <div class="container-wrapper container-wrapper--catalog container-wrapper--form">
       <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Логотип Седона.">
-
+    </div>
     </div>
   </header>
   <main class="main-container">
@@ -56,7 +60,7 @@
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </header>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <form class="textarea-form" action="https://echo.htmlacademy.ru/courses" method="get">
 
         <fieldset class="review__field-group">
           <legend class="review__title">
@@ -89,27 +93,27 @@
           </label>
         </fieldset>
 
-        <fieldset class="review__field-group">
+        <fieldset class="review__field-group radiobuttons">
           <legend class="review__title">Ваше общее впечатление:</legend>
           <ul class="review__list">
             <li class="review__item">
 
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="positive" checked>
+                <input class="control__input visually-hidden" type="radio" name="impression" value="positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="negative">
+                <input class="control__input visually-hidden" type="radio" name="impression" value="negative">
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="radio" name="impression" value="unknown">
+                <input class="control__input visually-hidden" type="radio" name="impression" value="unknown">
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
@@ -117,34 +121,34 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review__field-group">
+        <fieldset class="review__field-group checkboxes">
 
           <legend class="review__title">Посещенные достопримечательности:</legend>
           <ul class="review__list">
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="bridge-devil" checked>
+                <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="mount-bell" checked>
+                <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="slide-park" checked>
+                <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="red-rocks">
+                <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
                 <span class="control__mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>
@@ -156,15 +160,17 @@
           <legend class="review__title">Опишите свои эмоции:</legend>
 
           <label for="textarea" class="visually-hidden">отзыв</label>
-          <textarea name="reviews-comment" id="textarea" placeholder="Опишите подробно все свои восторги"
+          <textarea class="textarea" name="reviews-comment" id="textarea" placeholder="Опишите подробно все свои восторги"
             required></textarea>
         </fieldset>
-        <button class="button" type="submit">Отправить отзыв</button>
+        <div class="review__wrapper">
+        <button class="reviews-button" type="submit">Отправить отзыв</button>
         <p class="review__note">
           <small>
             * — обязательные поля
           </small>
         </p>
+      </div>
       </form>
 
     </section>
@@ -186,14 +192,15 @@
             Ютубе</a>
         </li>
       </ul>
-
+<div class="main-footer__info-text">
       <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="main-footer__info-text">Разработано:
           <img class="icon-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
 
         </p>
-      </a>
 
+      </a>
+    </div>
     </footer>
     <section class="modal modal--failure">
       <div class="modal__container modal__container--close">
@@ -218,6 +225,7 @@
       </div>
     </section>
   </main>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>

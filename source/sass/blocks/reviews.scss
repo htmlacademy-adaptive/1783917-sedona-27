@@ -1,0 +1,248 @@
+.reviews {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    ::before {
+      position: absolute;
+      right: 35px;
+      top: -206px;
+      left: 60px;
+      height: 1px;
+      width: 123px;
+      background-color: #dbdbdb;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    ::before {
+      position: absolute;
+      right: 35px;
+      top: -220px;
+      left: 120px;
+      height: 1px;
+      width: 281px;
+      background-color: rgb(229, 229, 229);
+      content: "";
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews ::after {
+    position: absolute;
+    right: 35px;
+    top: -206px;
+    left: 585px;
+    height: 1px;
+    width: 123px;
+    background-color: #dbdbdb;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews ::after {
+    position: absolute;
+    right: 35px;
+    top: -220px;
+    left: 801px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+.review__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 216px;
+  }
+}
+
+.reviews__title {
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__title {
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.textarea-form .textarea {
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(#000000, 0.3);
+  padding: 18px 13px 12px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea-form .textarea {
+    margin-bottom: 44px;
+    padding: 16px 13px 12px 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-form .textarea {
+    margin-bottom: 44px;
+    padding: 16px 13px 12px 13px;
+  }
+}
+
+.reviews-button {
+  background-color: $accent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.reviews-button:hover {
+  background-color: #669ec0;
+}
+
+.reviews-button:active {
+  background-color: #5496bd;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-wrapper {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-wrapper {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 67px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .block .decorative-line::before {
+    width: 124px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dbdbdb;
+    top: 3%;
+    right: 135px;
+    left: 61px;
+    height: 1px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block .decorative-line::before {
+    width: 281px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dbdbdb;
+    top: 4%;
+    right: 182px;
+    left: 800px;
+    height: 1px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .block .decorative-line::after {
+    display: block;
+    width: 125px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dbdbdb;
+    top: 3%;
+    right: 146px;
+    left: 584px;
+    height: 1px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block .decorative-line::after {
+    display: block;
+    width: 281px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #dbdbdb;
+    top: 4%;
+    right: 135px;
+    left: 119px;
+    height: 1px;
+    box-sizing: border-box;
+  }
+}
