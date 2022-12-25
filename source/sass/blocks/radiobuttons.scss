@@ -80,6 +80,12 @@
   padding-top: 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .radiobuttons__group {
+    margin: 0 auto;
+  }
+}
+
 .radiobuttons__wrapper {
   width: 320px;
   position: relative;
@@ -100,5 +106,11 @@
     justify-content: space-between;
     width: 854px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radiobuttons {
+    padding: 0;
   }
 }

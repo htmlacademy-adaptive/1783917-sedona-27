@@ -5,13 +5,19 @@
   height: 58px;
   margin-bottom: 14px;
   cursor: pointer;
+}
 
-  @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
-    border: none;
-    width: 431px;
-    height: 58px;
-    margin-bottom: 16px;
+@media (min-width: $tablet-width) {
+  .field {
+    padding-left: 13px;
+
+    @media (min-width: $desktop-width) {
+      background-color: #f2f2f2;
+      border: none;
+      width: 431px;
+      height: 58px;
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -31,4 +37,48 @@
   background-color: rgb(255, 255, 255);
   appearance: none;
   outline: 4px solid rgb(229, 229, 229);
+}
+
+@media (min-width: $tablet-width) {
+  .field-email {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-email {
+    margin-left: 62px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-phone {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-phone {
+    margin-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-form .field-phone {
+    background-color: #f2f2f2;
+    border: none;
+    width: 404px;
+    height: 58px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-form .field-email {
+    background-color: #f2f2f2;
+    border: none;
+    width: 404px;
+    height: 58px;
+    margin-bottom: 16px;
+  }
 }

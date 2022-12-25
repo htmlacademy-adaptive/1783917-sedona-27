@@ -1,16 +1,13 @@
 .blue-background {
-  background-color: $accent;
   color: #ffffff;
   width: 320px;
   height: 211px;
   margin: 0 auto;
-  padding: 56px 22px 35px 22px;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .blue-background {
-    padding-top: 40px;
     width: 256px;
     height: 256px;
   }
@@ -20,12 +17,8 @@
   .blue-background {
     width: 400px;
     height: 256px;
-    padding: 47px 52px 56px 52px;
+    padding: 47px 52px 56px 62px;
   }
-}
-
-.blue-background--sedona-bridge {
-  padding: 41px 22px 35px 22px;
 }
 
 @media (min-width: $tablet-width) {

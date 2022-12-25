@@ -30,7 +30,7 @@
       width: 768px;
       height: 57px;
       margin: 0;
-      top: 473px;
+      top: 461px;
       right: 0;
       bottom: 0;
       left: 0;
@@ -51,7 +51,7 @@
       width: 1200px;
       height: 57px;
       margin: 0;
-      top: 475px;
+      top: 460px;
       right: 0;
       bottom: 0;
       left: 0;
@@ -74,10 +74,12 @@
   .background-container {
     background-image: url("../img/index-tablet-background.jpg");
     width: 768px;
-    margin: 42px auto;
-    height: 529px;
+    margin: 101px auto;
+    height: 517px;
     background-position: bottom;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
+    background-size: 100%;
+    background-color: #3f5e72;
   }
 }
 
@@ -85,10 +87,10 @@
   .background-container {
     background-image: url("../img/index-tablet-background.jpg");
     width: 1200px;
-    margin: 42px auto;
-    height: 532px;
+    margin: 101px auto;
+    height: 517px;
     background-size: cover;
-    background-position-y: 10px;
+    background-position-y: -15px;
     margin-bottom: -32px;
   }
 }

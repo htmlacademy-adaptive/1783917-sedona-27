@@ -13,7 +13,6 @@
     display: block;
     content: "";
     background-image: url("../img/intro-triangle-desktop-catalog.svg");
-    //background-image: url("../img/intro-triangle-desktop-catalog.svg");
     width: 320px;
     height: 57px;
     top: -62px;
@@ -32,8 +31,7 @@
     background-image: url("../img/back-tablet-catalog-form.jpg.jpg");
     width: 768px;
     margin: 0 auto;
-    height: 346px;
-    background-position: top;
+    height: 390px;
     margin-bottom: 28px;
 
     ::after {
@@ -42,7 +40,7 @@
       background-image: url("../img/intro-triangle-desktop-catalog.svg");
       width: 768px;
       height: 57px;
-      top: 54px;
+      top: 58px;
       bottom: 96px;
       left: -155px;
       background-position: center;
@@ -58,7 +56,7 @@
   .background-container-catalog {
     background-image: url("../img/back-desktop-catalog-form.jpg.jpg");
     width: 1200px;
-    height: 357px;
+    height: 402px;
     margin-bottom: 61px;
 
     ::after {
@@ -67,7 +65,7 @@
       background-image: url("../img/intro-triangle-desktop-catalog.svg");
       width: 1200px;
       height: 57px;
-      top: 59px;
+      top: 60px;
       bottom: 96px;
       left: -368px;
       background-position: center;
