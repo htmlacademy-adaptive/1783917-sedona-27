@@ -12,10 +12,11 @@
   .checkboxes {
     width: 768px;
     margin: 0 auto;
-    height: 257px;
-    border-bottom: none;
+    height: 253px;
+    border: none;
     padding: 26px 23px 19px;
     box-sizing: border-box;
+    margin-bottom: -12px;
   }
 }
 
@@ -98,28 +99,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .checkboxes__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 480px;
-    margin: 0 auto;
-    padding: 17px 14px 10px 21px;
-    box-sizing: border-box;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 912px;
-      margin: 0 auto;
-      padding: 17px 14px 10px 21px;
-      box-sizing: border-box;
-    }
-  }
-}
-
 .checkboxes__wrapper {
   width: 320px;
 }
@@ -190,7 +169,6 @@
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   position: absolute;
-  /*background-size: 26px 16px;*/
   padding: 0 auto;
   background-position: center;
   color: rgb(0, 0, 0);

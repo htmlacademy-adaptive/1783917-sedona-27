@@ -47,7 +47,7 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 23px;
     width: 210px;
   }
 }
@@ -61,7 +61,7 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     width: 210px;
   }
 }
@@ -82,6 +82,12 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__description {
+    padding-bottom: 48px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -160,7 +166,7 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 24px;
   }
 }
 
@@ -190,7 +196,7 @@
     margin: 0 auto;
     width: 640px;
     height: 347px;
-    padding: 48px 99px 44px;
+    padding: 48px 91px 44px;
     box-sizing: border-box;
   }
 }
@@ -215,9 +221,23 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 70px;
+}
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 97px;
+@media (min-width: $tablet-width) {
+  .modal__success__description {
+    margin: 0;
+    padding: 0 20px;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 98px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 97px;
+    }
   }
 }
 
@@ -228,7 +248,7 @@
   text-align: center;
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -246,13 +266,13 @@
 
 @media (min-width: $desktop-width) {
   .modal__success__button {
-    padding: 19px 153px 13px 158px;
+    padding: 17px 153px 13px 158px;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #81b3d2;
     border: none;
     color: #ffffff;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;

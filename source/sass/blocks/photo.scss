@@ -1,21 +1,21 @@
-.photo__wrapper {
+.photo--wrapper {
   width: 320px;
   margin: 0 auto;
   border-top: 1px solid #e5e5e5;
-  padding-top: 24px;
 }
 
 @media (min-width: $tablet-width) {
-  .photo__wrapper {
+  .photo--wrapper {
     width: 648px;
     border-top: none;
+    padding-top: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo__wrapper {
+  .photo--wrapper {
     width: 1200px;
-    padding-top: 34px;
+    padding-top: 55px;
   }
 }
 
@@ -26,8 +26,10 @@
   padding-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .photo__card__list {
     height: 667px;
     width: 1200px;
     margin: 0;
@@ -233,7 +235,7 @@
     box-sizing: border-box;
     justify-content: flex-start;
     height: 267px;
-    margin-bottom: 145px;
+    margin-bottom: 124px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -254,7 +256,7 @@
 
 @media (min-width: $tablet-width) {
   .like-icon:nth-child(1) {
-    margin: -9px 0 0 6px;
+    margin: -11px 0 0 3px;
   }
 }
 
@@ -274,7 +276,7 @@
   .icon-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 70px;
+    width: 73px;
   }
 }
 
@@ -312,7 +314,7 @@
     flex-wrap: wrap;
     width: 608px;
     background-color: rgb(242, 242, 242);
-    padding: 21px 20px 14px;
+    padding: 21px 20px 9px;
     margin: 0;
 
     @media (min-width: $desktop-width) {
@@ -400,9 +402,8 @@
     cursor: pointer;
     font-weight: 700;
     box-sizing: border-box;
-    padding: -17px 38px;
-    margin: 15px 5px;
-    margin-bottom: -48px;
+    margin: 9px 9px;
+    margin-bottom: -44px;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;

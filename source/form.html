@@ -52,16 +52,17 @@
   <main class="main-container">
 
     <section class="review">
-      <header class="review__header description">
-        <h1 class="description__title">
+      <header class="review__header description review__header--form">
+        <h1 class="description__title description__title--form">
           Оставьте свой отзыв
         </h1>
-        <p class="description__subtitle">
+        <p class="description__subtitle description__subtitle--form">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </header>
       <form class="textarea-form" action="https://echo.htmlacademy.ru/courses" method="get">
 
+        <div class="form-contacts">
         <fieldset class="review__field-group">
           <legend class="review__title">
             Представьтесь:
@@ -86,16 +87,16 @@
           </legend>
 
           <label for="phone" class="review__control">Контактный телефон*:
-            <input class="field" placeholder="Введите телефон" type="text" name="contact-phone" id="phone" required>
+            <input class="field field-phone" placeholder="Введите телефон" type="text" name="contact-phone" id="phone" required>
           </label>
           <label for="e-mail" class="review__control">Электронная почта*:
-            <input class="field" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail" required>
+            <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail" required>
           </label>
         </fieldset>
-
-        <fieldset class="review__field-group radiobuttons">
-          <legend class="review__title">Ваше общее впечатление:</legend>
-          <ul class="review__list">
+      </div>
+        <fieldset class="review__field-group review__field-group--radiobuttons">
+          <legend class="review__title review__title--radiobuttons">Ваше общее впечатление:</legend>
+          <ul class="review__list review__list--radiobuttons">
             <li class="review__item">
 
               <label class="control">
@@ -123,30 +124,30 @@
 
         <fieldset class="review__field-group checkboxes">
 
-          <legend class="review__title">Посещенные достопримечательности:</legend>
-          <ul class="review__list">
-            <li class="review__item">
+          <legend class="review__title review__title--checkboxes">Посещенные достопримечательности:</legend>
+          <ul class="review__list review__list--checkboxes">
+            <li class="review__item review__item--checkboxes">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
-            <li class="review__item">
+            <li class="review__item review__item--checkboxes">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
-            <li class="review__item">
+            <li class="review__item review__item--checkboxes">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
-            <li class="review__item">
+            <li class="review__item review__item--checkboxes review__item--rocks">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
                 <span class="control__mark"></span>
@@ -156,8 +157,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review__field-group">
-          <legend class="review__title">Опишите свои эмоции:</legend>
+        <fieldset class="review__field-group reviews">
+          <legend class="review__title review__title--reviews"> <span class="decorative-line"> Опишите свои эмоции: </span></legend>
 
           <label for="textarea" class="visually-hidden">отзыв</label>
           <textarea class="textarea" name="reviews-comment" id="textarea" placeholder="Опишите подробно все свои восторги"
@@ -166,42 +167,45 @@
         <div class="review__wrapper">
         <button class="reviews-button" type="submit">Отправить отзыв</button>
         <p class="review__note">
-          <small>
+
             * — обязательные поля
-          </small>
+
+
         </p>
       </div>
       </form>
 
     </section>
     <footer class="main-footer social">
+      <div class="main-footer__wrapper">
 
+            <a class="main-footer__hashtag" href="#">#Visitsedona</a>
 
-      <a class="main-footer__hashtag" href="#">#Visitsedona</a>
+      <div class=" main-footer__social social ">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+                  Ютубе</a>
+              </li>
+            </ul>
+          </div>
+      <div class="main-footer__info-text info-text">
+            <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="main-footer__info">Разработано:
+                <img class="icon-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
 
+              </p>
 
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-            Ютубе</a>
-        </li>
-      </ul>
-<div class="main-footer__info-text">
-      <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="main-footer__info-text">Разработано:
-          <img class="icon-html-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-
-        </p>
-
-      </a>
-    </div>
-    </footer>
+            </a>
+          </div>
+          </div>
+          </footer>
     <section class="modal modal--failure">
       <div class="modal__container modal__container--close">
         <h2 class="modal__title">Что-то пошло не так!</h2>

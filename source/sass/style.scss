@@ -37,11 +37,20 @@
 @import "./blocks/fonts.scss";
 @import "./blocks/review.scss";
 @import "./blocks/description.scss";
+@import "./blocks/main-container.scss";
 
 body {
   //background-color: rgb(235, 25, 190); //
   font-family: "PT Sans", "Arial", sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    box-shadow: 0 10px 10px 2px #cecece;
+    width: 1200px;
+    height: 2667px;
+  }
 }

@@ -9,10 +9,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro--form {
-    margin-bottom: -2px;
-    padding-top: 0;
-    padding-bottom: 111px;
+  .description--form {
+    margin: 0;
+    padding: 0;
 
     @media (min-width: $desktop-width) {
       margin-bottom: -97px;
@@ -31,7 +30,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 16px;
+  padding-left: 17px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -42,7 +41,7 @@
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 18px;
+    padding-left: 68px;
   }
 }
 
@@ -67,6 +66,32 @@
 
 @media (min-width: $desktop-width) {
   .review__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 856px;
+    height: 124px;
+    margin: 0 auto;
+    padding: 0 3px 0 17px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__list--radiobuttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 539px;
+    height: 124px;
+    margin: 0 auto;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__list--radiobuttons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -140,5 +165,176 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__header--form {
+    margin-bottom: -2px;
+    padding-top: 0;
+    padding-bottom: 86px;
+    width: 484px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__header--form {
+    margin-bottom: -2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 484px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__title {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 27px;
+    margin-left: 0;
+    padding-top: 44px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__title--reviews {
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__title--radiobuttons {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 17px;
+    margin-left: 0;
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--radiobuttons {
+    padding-bottom: 36px;
+    margin-left: 0;
+    padding-top: 25px;
+    padding-right: 8px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .review__title--checkboxes {
+    padding: 22px 0 14px;
+    width: 308px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--checkboxes {
+    padding: 36px 0 14px;
+    width: 308px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__list--checkboxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 124px;
+    margin: 0 auto;
+    padding: 0 16px 0 17px;
+    box-sizing: border-box;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 918px;
+      margin: 0 auto;
+      padding: 31px 23px 10px 42px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__item--checkboxes {
+    width: 190px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__item--checkboxes {
+    width: 164px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__item--rocks {
+    margin-left: -22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__header--form {
+    ::before {
+      position: absolute;
+      right: 35px;
+      top: 630px;
+      left: -84px;
+      height: 1px;
+      width: 129px;
+      background-color: #dbdbdb;
+      content: "";
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        right: 45px;
+        top: 627px;
+        left: -238px;
+        height: 1px;
+        width: 281px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__header--form ::after {
+    position: absolute;
+    right: 35px;
+    top: 629px;
+    left: 444px;
+    height: 1px;
+    width: 129px;
+    background-color: #dbdbdb;
+    content: "";
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: 35px;
+      top: 628px;
+      left: 440px;
+      height: 1px;
+      width: 281px;
+      background-color: #dbdbdb;
+      content: "";
+    }
   }
 }

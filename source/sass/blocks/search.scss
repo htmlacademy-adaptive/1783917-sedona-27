@@ -10,7 +10,7 @@
   .search {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    padding: 58px 155px;
   }
 }
 
@@ -18,9 +18,9 @@
   .search {
     width: 1200px;
     box-sizing: border-box;
-    padding: 83px 44px 50px 44px;
+    padding: 62px 373px 50px;
     height: 332px;
-    margin-bottom: 24px;
+    margin-bottom: -2px;
   }
 }
 
@@ -49,6 +49,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .search__content-title {
+    padding: 0 20px 31px 20px;
+  }
+}
+
 .search__content-description {
   font-family: $title;
   font-weight: 400;
@@ -71,5 +77,11 @@
     br {
       display: block;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__content-description {
+    padding-bottom: 48px;
   }
 }
