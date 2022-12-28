@@ -90,7 +90,7 @@
   height: 55px;
   border: none;
   position: absolute;
-  top: 94px;
+  top: 27px;
   right: 21px;
   cursor: pointer;
 
@@ -100,8 +100,8 @@
     height: 55px;
     border: none;
     position: absolute;
-    top: 74px;
-    right: 2px;
+    top: 23px;
+    right: 1px;
     cursor: pointer;
 
     @media (min-width: $desktop-width) {
@@ -110,8 +110,8 @@
       height: 55px;
       border: none;
       position: absolute;
-      top: 74px;
-      right: -2px;
+      top: 23px;
+      right: 0;
       cursor: pointer;
     }
   }
@@ -130,7 +130,7 @@
   height: 55px;
   border: none;
   position: absolute;
-  top: 188px;
+  top: 121px;
   right: 21px;
   cursor: pointer;
 
@@ -140,8 +140,8 @@
     height: 55px;
     border: none;
     position: absolute;
-    top: 168px;
-    right: 2px;
+    top: 117px;
+    right: 3px;
     cursor: pointer;
 
     @media (min-width: $desktop-width) {
@@ -150,8 +150,8 @@
       height: 55px;
       border: none;
       position: absolute;
-      top: 171px;
-      right: -2px;
+      top: 119px;
+      right: 1px;
       cursor: pointer;
     }
   }

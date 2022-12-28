@@ -598,6 +598,110 @@
   bottom: 100px;
 }
 
+//ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ TABLET
+@media (min-width: $tablet-width) {
+  .advantages__item--housing::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/house.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 92px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--food::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/burger.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 346px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--gift::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/present.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 602px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 83px;
+  }
+}
+
+//ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ DESKTOP
+@media (min-width: $desktop-width) {
+  .advantages__item--housing::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/house.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 163px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--food::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/burger.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 564px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--gift::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/present.svg");
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 963px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 88px;
+  }
+}
+
 .advantages__real__town {
   display: flex;
   margin: 0 auto;
