@@ -561,13 +561,13 @@
   position: absolute;
   display: block;
   background-image: url("../img/house.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -66px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  top: 6px;
 }
 
 .advantages__item--food::before {
@@ -575,13 +575,13 @@
   position: absolute;
   display: block;
   background-image: url("../img/burger.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -65px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  bottom: 199px;
 }
 
 .advantages__item--gift::before {
@@ -589,13 +589,13 @@
   position: absolute;
   display: block;
   background-image: url("../img/present.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -66px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  bottom: 100px;
 }
 
 .advantages__real__town {
