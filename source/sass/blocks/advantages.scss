@@ -372,7 +372,7 @@
 
 .advantages__description--town {
   color: #ffffff;
-  padding: 0 7px 0;
+  padding: 0 15px 0;
   margin: 0;
   padding-bottom: 40px;
 }
@@ -595,7 +595,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
-  bottom: 100px;
+  bottom: 85px;
 }
 
 //ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ TABLET
@@ -604,14 +604,13 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/house.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
-    left: 92px;
+    left: 91px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 81px;
+    background-size: 82px;
     top: 85px;
   }
 }
@@ -621,7 +620,6 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/burger.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
@@ -638,7 +636,6 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/present.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
@@ -656,7 +653,6 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/house.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
@@ -673,7 +669,6 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/burger.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
@@ -690,7 +685,6 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/present.svg");
     width: 88px;
     height: 77px;
     margin: -30px -8px;
