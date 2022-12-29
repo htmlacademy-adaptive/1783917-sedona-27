@@ -372,7 +372,7 @@
 
 .advantages__description--town {
   color: #ffffff;
-  padding: 0 7px 0;
+  padding: 0 15px 0;
   margin: 0;
   padding-bottom: 40px;
 }
@@ -561,13 +561,13 @@
   position: absolute;
   display: block;
   background-image: url("../img/house.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -66px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  top: 6px;
 }
 
 .advantages__item--food::before {
@@ -575,13 +575,13 @@
   position: absolute;
   display: block;
   background-image: url("../img/burger.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -65px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  bottom: 199px;
 }
 
 .advantages__item--gift::before {
@@ -589,13 +589,111 @@
   position: absolute;
   display: block;
   background-image: url("../img/present.svg");
-  width: 69%;
+  width: 50px;
   height: 78px;
-  margin: -30px -8px;
-  left: -66px;
+  left: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
+  bottom: 85px;
+}
+
+//ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ TABLET
+@media (min-width: $tablet-width) {
+  .advantages__item--housing::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 91px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 82px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--food::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 346px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--gift::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 602px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 83px;
+  }
+}
+
+//ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ DESKTOP
+@media (min-width: $desktop-width) {
+  .advantages__item--housing::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 163px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--food::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 564px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--gift::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 77px;
+    margin: -30px -8px;
+    left: 963px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 81px;
+    top: 88px;
+  }
 }
 
 .advantages__real__town {
