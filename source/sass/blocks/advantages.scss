@@ -701,6 +701,37 @@
   margin: 0 auto;
 }
 
+/*
+.advantages__real__town {
+  display: flex;
+  margin: 0 auto;
+  background-image: url("img/real-town.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("img/real-town@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__real__town {
+    background-image: url("img/real-town-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("img/real-town-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__real__town {
+    background-image: url("img/real-town-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("img/real-town-desktop@2x.jpg");
+    }
+  }
+}
+*/
 .sedona-bridge {
   margin: -20px auto;
   height: 100%;
