@@ -26,9 +26,16 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .background-container-catalog {
+    background-image: url("../img/index-background@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .background-container-catalog {
-    background-image: url("../img/back-tablet-catalog-form.jpg.jpg");
+    background-image: url("../img/back-tablet-catalog-form.jpg");
     width: 768px;
     margin: 0 auto;
     height: 390px;
@@ -52,9 +59,18 @@
   }
 }
 
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+  .background-container-catalog {
+    background-image: url("../img/back-tablet-catalog-form@2x.jpg");
+    background-position: bottom center, center top;
+    width: 768px;
+    background-size: cover;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .background-container-catalog {
-    background-image: url("../img/back-desktop-catalog-form.jpg.jpg");
+    background-image: url("../img/back-desktop-catalog-form.jpg");
     width: 1200px;
     height: 402px;
     margin-bottom: 61px;
@@ -74,6 +90,15 @@
       box-sizing: border-box;
       margin: 0 auto;
     }
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+  .background-container-catalog {
+    background-image: url("../img/back-desktop-catalog-form@2x.jpg");
+    background-position: bottom center, center top;
+    width: 1200px;
+    background-size: cover;
   }
 }
 

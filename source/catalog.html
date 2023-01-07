@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Html Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -63,8 +67,14 @@
 
       <ul class="photo__card__list">
         <li class="photo__card__item">
-          <img class="photo__catalog " src="img/photo-1-mobile.jpg" alt="Дорога и вид на горы перед закатом в Седоне."
+          <picture>
+            <source media="(min-width:1200px)"
+              srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x",  width="648" height="400">
+          <img class="photo__catalog " src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"  alt="Дорога и вид на горы перед закатом в Седоне."
             width="280" height="280">
+            </picture>
             <div class="text-catalog-container">
               <div class="text-wrapper">
           <h2 class="photo__catalog__title">
@@ -81,8 +91,14 @@
         </div>
         </li>
         <li class="photo__card__item">
-          <img class="photo__catalog photo__catalog--2" src="img/photo-2-mobile.jpg" alt="Кактусы на фоне скал в Седоне." width="280"
+          <picture>
+            <source media="(min-width:1200px)"
+              srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x",  width="324" height="267">
+          <img class="photo__catalog photo__catalog--2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактусы на фоне скал в Седоне." width="280"
             height="280">
+            </picture>
             <div class="photo__card-wrapper">
               <div class="text-wrapper">
           <h2 class="photo__catalog__title">
@@ -100,8 +116,14 @@
 </div>
         </li>
         <li class="photo__card__item">
-          <img class="photo__catalog photo__catalog--3" src="img/photo-3-mobile.jpg" alt="Дорога серпантин и вид на лес в Седоне."
+          <picture>
+            <source media="(min-width:1200px)"
+              srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x",  width="324" height="267">
+          <img class="photo__catalog photo__catalog--3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога серпантин и вид на лес в Седоне."
             width="280" height="280">
+          </picture>
 
             <div class="photo__card-wrapper photo__card-wrapper--road">
               <div class="text-wrapper">
@@ -118,10 +140,12 @@
               <span class="number">96</span>
             </div>
           </div>
-
         </li>
-        <li class="photo__card__item ">
-          <img class="photo__catalog photo__catalog--4" src="img/photo-4-mobile.jpg" alt="Красные скалы в Седоне." width="280"
+        <li class="photo__card__item">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x",  width="324" height="267">
+          <img class="photo__catalog photo__catalog--4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Красные скалы в Седоне." width="280"
             height="280">
             <div class="photo__card-wrapper">
               <div class="text-wrapper">
@@ -149,15 +173,15 @@
       <p class="video__description">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="video-preview" src="#" poster="img/video-mobile.jpg">
+
+      <video class="video-preview" src="#" srcset="img/video-mobile@2x.jpg 2x" poster="img/video-mobile.jpg">
       </video>
-      <button class="button-video" ><img class="video-button" src="./img/video-button-mobile.svg" width="48" height="54" alt="Кнопка воспроизвести видео"></button>
+      <button class="button-video">
+        <img class="video-button" src="./img/video-button-mobile.svg" width="48" height="54" alt="Кнопка воспроизвести видео"></button>
     </section>
     <footer class="main-footer social">
       <div class="main-footer__wrapper">
-
-            <a class="main-footer__hashtag" href="#">#Visitsedona</a>
-
+        <a class="main-footer__hashtag" href="#">#Visitsedona</a>
       <div class=" main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -175,7 +199,6 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg class="youtube"  width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.181 5H4.813C3.306 5 2 6.3 2 7.8v8.3C2 17.7 3.306 19 4.813 19h14.368c1.608 0 2.814-1.3 2.814-2.8V7.8c.1-1.5-1.206-2.8-2.814-2.8ZM9.033 15.4V8.6l6.833 3.4-6.833 3.4Z" fill="currentColor"/></svg>
-
               <span class="visually-hidden" hidden> Мы в
                 Ютубе.</span>
             </a>
