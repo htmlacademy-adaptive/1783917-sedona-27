@@ -19,11 +19,6 @@
   }
 }
 
-
-.main-footer__wrapper--index {
-  padding-top: 32px;
-}
-
 .main-footer__wrapper {
   padding: 0;
   margin: 0 auto;
@@ -48,6 +43,67 @@
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     padding: 20px 112px 20px 125px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 120px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+.main-footer__wrapper--index {
+  padding-top: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper--index {
+    padding: 0 60px 20px 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    height: 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper--index {
+    padding: 21px 112px 20px 121px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 120px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+.main-footer__wrapper--catalog {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+  height: 243px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper--catalog {
+    padding: 33px 50px 9px;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    height: 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper--catalog {
+    padding: 16px 112px 41px 122px;
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -87,20 +143,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 95px;
+  padding: 0 91px 0 98px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 15px;
+    padding-top: 21px;
     width: 145px;
     padding-left: 33px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-footer__info {
-    width: 131px;
   }
 }
 
@@ -113,13 +163,13 @@
 }
 
 .icon-html-academy {
-  color: #000000;
-  padding-left: 3px;
+  padding-left: 6px;
+  padding-top: 2px;
 }
 
 /*CТИЛИ ПРИ НАВЕДЕНИИ -HOVER*/
 .icon-html-academy:hover {
-  color: rgb(129, 179, 210);
+  fill: rgb(129, 179, 210);
 }
 
 .main-footer__info:hover {
@@ -135,6 +185,10 @@
   color: rgb(179, 179, 179);
 }
 
+.icon-html-academy:active {
+  fill: rgb(179, 179, 179);
+}
+
 .main-footer__info:active {
   color: rgb(179, 179, 179);
 }
@@ -147,4 +201,14 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  display: flex;
+  padding-top: 4px;
+  align-items: center;
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__info {
+    width: 131px;
+    padding-left: 11px;
+  }
 }
