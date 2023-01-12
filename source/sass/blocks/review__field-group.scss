@@ -9,6 +9,13 @@
   position: relative;
 }
 
+@media (min-width: $mobile-width) {
+  .review__field-group--1 {
+    padding: 4px 12px 26px 20px;
+    margin-bottom: 24px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .review__field-group {
     width: 320px;
@@ -60,7 +67,7 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 18px;
-  margin-left: -9px;
+  margin-left: -5px;
 }
 
 @media (min-width: $tablet-width) {
