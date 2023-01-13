@@ -45,6 +45,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .review__control {
+    padding-left: 83px;
+  }
+}
+
 .review__list {
   list-style: none;
   margin: 0;
@@ -336,5 +342,11 @@
       background-color: #dbdbdb;
       content: "";
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--introduce {
+    padding-left: 61px;
   }
 }

@@ -29,11 +29,16 @@
   }
 }
 
+.review__field-group--1 {
+  margin-right: -12px;
+}
+
+/*
 @media (min-width: $tablet-width) {
   .review__field-group:nth-child(1) {
     padding-right: 42px;
   }
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .review__field-group:nth-child(2) {
@@ -60,7 +65,7 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 18px;
-  margin-left: -9px;
+  margin-left: -5px;
 }
 
 @media (min-width: $tablet-width) {
