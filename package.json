@@ -26,10 +26,17 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp",
     "start": "gulp",
     "scripts": "gulp scripts",
-    "optimizeImages":"gulp optimizeImages"
+    "optimizeImages": "gulp optimizeImages",
+    "createWebp": "gulp createWebp",
+    "sprite": "gulp sprite",
+    "svg": "gulp svg",
+    "copy": "gulp copy",
+    "clean": "gulp clean",
+    "reload": "gulp reload",
+    "watcher": "gulp watcher"
   },
   "browserslist": [
     "last 2 versions",
