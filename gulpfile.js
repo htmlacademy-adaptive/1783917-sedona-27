@@ -45,7 +45,16 @@ export const scripts = () => {
 
 
 //Images
+export const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'));
+}
 
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(gulp.dest('build/img'));
+}
 
 
 //WebP
@@ -81,5 +90,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, scripts, styles, server, watcher
+  html, scripts, styles, server, watcher, gulp
 );

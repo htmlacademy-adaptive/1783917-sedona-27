@@ -28,7 +28,8 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "scripts": "gulp scripts"
+    "scripts": "gulp scripts",
+    "optimizeImages":"gulp optimizeImages"
   },
   "browserslist": [
     "last 2 versions",
