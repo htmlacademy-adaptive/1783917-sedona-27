@@ -64,6 +64,10 @@
   background-color: rgb(213, 213, 213);
 }
 
+.control__input:focus + .control__mark {
+  outline: 2px solid #939393;
+}
+
 .control__mark:hover {
   background-color: rgb(229, 229, 229);
 }
