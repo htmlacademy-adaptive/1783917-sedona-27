@@ -10,13 +10,16 @@
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+      <img src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седона.">
     </a>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +53,8 @@
     </nav>
     <div class="background-container-catalog ">
       <div class="container-wrapper container-wrapper--catalog container-wrapper--form">
-        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Логотип Седона.">
+        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" loading="lazy" width="229" height="39"
+          alt="Логотип Седона.">
       </div>
     </div>
   </header>

@@ -10,13 +10,16 @@
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+      <img src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седона.">
     </a>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +53,8 @@
     </nav>
     <div class="background-container-catalog ">
       <div class="container-wrapper container-wrapper--catalog container-wrapper--form">
-        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Логотип Седона.">
+        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" loading="lazy" width="229" height="39"
+          alt="Логотип Седона.">
       </div>
     </div>
   </header>
@@ -76,8 +80,9 @@
 
             <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x"
               width="648" height="400">
-            <img class="photo__catalog " src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
-              alt="Дорога и вид на горы перед закатом в Седоне." width="280" height="280">
+            <img class="photo__catalog " src="img/photo-1-mobile.jpg" loading="lazy"
+              srcset="img/photo-1-mobile@2x.jpg 2x" alt="Дорога и вид на горы перед закатом в Седоне." width="280"
+              height="280">
           </picture>
           <div class="text-catalog-container">
             <div class="text-wrapper">
@@ -90,7 +95,7 @@
               <button class="like-icon like-icon--1" type="button">
 
                 <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
-                  <use href="#like"></use>
+                  <use href="img/sprite.svg#like"></use>
                 </svg>
 
               </button>
@@ -105,7 +110,7 @@
 
             <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x"
               width="324" height="267">
-            <img class="photo__catalog photo__catalog--2" src="img/photo-2-mobile.jpg"
+            <img class="photo__catalog photo__catalog--2" src="img/photo-2-mobile.jpg" loading="lazy"
               srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактусы на фоне скал в Седоне." width="280" height="280">
           </picture>
           <div class="photo__card-wrapper">
@@ -118,7 +123,7 @@
             <div class="icon-wrapper">
               <button class="like-icon like-icon--2" type="button">
                 <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
-                  <use href="#like"></use>
+                  <use href="img/sprite.svg#like"></use>
                 </svg>
               </button>
               <span class="visually-hidden">Счётчик лайков</span>
@@ -133,7 +138,7 @@
 
             <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x"
               width="324" height="267">
-            <img class="photo__catalog photo__catalog--3" src="img/photo-3-mobile.jpg"
+            <img class="photo__catalog photo__catalog--3" src="img/photo-3-mobile.jpg" loading="lazy"
               srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога серпантин и вид на лес в Седоне." width="280"
               height="280">
           </picture>
@@ -148,7 +153,7 @@
             <div class="icon-wrapper">
               <button class="like-icon like-icon--3" type="button">
                 <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
-                  <use href="#like"></use>
+                  <use href="img/sprite.svg#like"></use>
                 </svg>
               </button>
               <span class="visually-hidden">Счётчик лайков</span>
@@ -162,7 +167,7 @@
               width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x"
               width="324" height="267">
-            <img class="photo__catalog photo__catalog--4" src="img/photo-4-mobile.jpg"
+            <img class="photo__catalog photo__catalog--4" src="img/photo-4-mobile.jpg" loading="lazy"
               srcset="img/photo-4-mobile@2x.jpg 2x" alt="Красные скалы в Седоне." width="280" height="280">
           </picture>
           <div class="photo__card-wrapper">
@@ -175,7 +180,7 @@
             <div class="icon-wrapper">
               <button class="like-icon like-icon--4" type="button">
                 <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
-                  <use href="#like"></use>
+                  <use href="img/sprite.svg#like"></use>
                 </svg>
               </button>
               <span class="visually-hidden">Счётчик лайков</span>
@@ -199,13 +204,13 @@
           height="500">
         <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648"
           height="500">
-        <img class="video-preview" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о Седоне."
-          width="280" height="177">
+        <img class="video-preview" src="img/video-mobile.jpg" loading="lazy" srcset="img/video-mobile@2x.jpg 2x"
+          alt="Видео о Седоне." width="280" height="177">
       </picture>
 
 
       <button class="button-video">
-        <img class="video-button" src="./img/video-button-mobile.svg" width="48" height="54"
+        <img class="video-button" src="./img/video-button-mobile.svg" loading="lazy" width="48" height="54"
           alt="Кнопка воспроизвести видео"></button>
     </section>
     <footer class="main-footer social">

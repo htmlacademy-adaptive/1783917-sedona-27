@@ -10,14 +10,17 @@
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="logo-index" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+      <img class="logo-index" src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96"
+        alt="Логотип Седона.">
     </a>
 
     <nav class="main-nav main-nav--closed">
@@ -53,8 +56,8 @@
     <div class="index-container-wrapper background-container">
       <div class="container">
 
-        <img class="main-picture-welcome-text" src="img/welcome-text-index.svg.svg" width="282" height="214"
-          alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой.">
+        <img class="main-picture-welcome-text" src="img/welcome-text-index.svg.svg" loading="lazy" width="282"
+          height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой.">
       </div>
     </div>
 
@@ -98,7 +101,7 @@
 
                 <source media="(min-width: 768px)" srcset="img/real-town-tablet.jpg 1x, img/real-town-tablet@2x.jpg 2x"
                   width="512" height="256">
-                <img class="picture" src="img/real-town.jpg" srcset="img/real-town@2x.jpg 2x"
+                <img class="picture" src="img/real-town.jpg" loading="lazy" srcset="img/real-town@2x.jpg 2x"
                   alt="Отель с рестораном в городе Седона." width="320" height="260">
               </picture>
             </div>
@@ -145,7 +148,7 @@
 
                 <source media="(min-width: 768px)"
                   srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" width="512" height="256">
-                <img class="picture" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x"
+                <img class="picture" src="img/photo-bridge.jpg" loading="lazy" srcset="img/photo-bridge@2x.jpg 2x"
                   alt="Пейзаж с видом на Мост Дьявола в Седоне." width="320" height="260">
               </picture>
             </div>
