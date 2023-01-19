@@ -29,8 +29,17 @@
   }
 }
 
-.review__field-group--1 {
-  margin-right: -12px;
+@media (min-width: $tablet-width) {
+  .review__field-group--1 {
+    margin-right: 4px;
+    padding-right: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--1 {
+    margin-right: -12px;
+  }
 }
 
 /*
@@ -52,6 +61,18 @@
     padding-right: 63px;
     border-right: 1px solid #e5e5e5;
     height: 381px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--2 {
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--2 {
+    padding-left: 75px;
   }
 }
 

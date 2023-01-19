@@ -147,10 +147,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-top: 21px;
     width: 145px;
-    padding-left: 33px;
+    padding: 1px 0 0 39px;
   }
 }
 
@@ -160,38 +158,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
-}
-
-.icon-html-academy {
-  padding-left: 6px;
-  padding-top: 2px;
-  padding-right: 7px;
-}
-
-/*CТИЛИ ПРИ НАВЕДЕНИИ -HOVER*/
-.icon-html-academy:hover {
-  fill: rgb(129, 179, 210);
-}
-
-.main-footer__link:hover {
-  color: rgb(129, 179, 210);
-}
-
-.main-footer__info:hover svg {
-  color: rgb(129, 179, 210);
-}
-
-/*CТИЛИ ПРИ КЛИКЕ -COPYRIGHT*/
-.main-footer__infot:active svg {
-  color: rgb(179, 179, 179);
-}
-
-.icon-html-academy:active {
-  fill: rgb(179, 179, 179);
-}
-
-.main-footer__info:active {
-  color: rgb(179, 179, 179);
 }
 
 .main-footer__info {
@@ -212,4 +178,16 @@
     width: 131px;
     padding-left: 11px;
   }
+}
+
+.icon-html-academy {
+  margin-left: 8px;
+}
+
+.main-footer__link:hover {
+  color: rgb(129, 179, 210);
+}
+
+.main-footer__link:active {
+  color: rgb(179, 179, 179);
 }
