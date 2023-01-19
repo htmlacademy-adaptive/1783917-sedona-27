@@ -34,22 +34,21 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 17px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 68px;
   }
 }
-
+/*
 @media (min-width: $desktop-width) {
   .review__control {
     padding-left: 83px;
   }
-}
+}*/
 
 .review__list {
   list-style: none;
@@ -239,7 +238,6 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .review__title--checkboxes {
     padding: 22px 0 14px;
@@ -251,6 +249,18 @@
   .review__title--checkboxes {
     padding: 36px 0 14px;
     width: 308px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__title--info {
+    margin-left: -21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--info {
+    padding: 43px 76px 25px 50px;
   }
 }
 
@@ -345,8 +355,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .review__title--introduce {
+    padding-left: 41px;
+    padding-bottom: 25px;
+    padding-top: 42px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .review__title--introduce {
     padding-left: 61px;
+    padding-bottom: 24px;
   }
 }
