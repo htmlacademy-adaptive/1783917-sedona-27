@@ -58,7 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper--index {
-    padding: 0 60px 20px 63px;
+    padding: 22px 60px 20px 61px;
     display: flex;
     justify-content: space-between;
     width: 768px;
@@ -190,4 +190,14 @@
 
 .main-footer__link:active {
   color: rgb(179, 179, 179);
+}
+
+.main-footer__info--catalog {
+  padding-top: 1px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__info--catalog {
+    padding-top: 17px;
+  }
 }

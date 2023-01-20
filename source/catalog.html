@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="/css/style.min.css" as="style">
-  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -75,6 +75,13 @@
       <ul class="photo__card__list">
         <li class="photo__card__item">
           <picture>
+
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
             <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x"
               width="1200" height="400">
 
@@ -105,6 +112,13 @@
         </li>
         <li class="photo__card__item">
           <picture>
+
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
             <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x"
               width="400" height="267">
 
@@ -113,7 +127,7 @@
             <img class="photo__catalog photo__catalog--2" src="img/photo-2-mobile.jpg" loading="lazy"
               srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактусы на фоне скал в Седоне." width="280" height="280">
           </picture>
-          <div class="photo__card-wrapper">
+          <div class="photo__card-wrapper photo__card-wrapper--plant">
             <div class="text-wrapper">
               <h2 class="photo__catalog__title">
                 Местная растительность
@@ -133,6 +147,13 @@
         </li>
         <li class="photo__card__item">
           <picture>
+
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
             <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x"
               width="400" height="267">
 
@@ -163,6 +184,13 @@
         </li>
         <li class="photo__card__item">
           <picture>
+
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
             <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x"
               width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x"
@@ -170,7 +198,7 @@
             <img class="photo__catalog photo__catalog--4" src="img/photo-4-mobile.jpg" loading="lazy"
               srcset="img/photo-4-mobile@2x.jpg 2x" alt="Красные скалы в Седоне." width="280" height="280">
           </picture>
-          <div class="photo__card-wrapper">
+          <div class="photo__card-wrapper photo__card-wrapper--bridge">
             <div class="text-wrapper">
               <h2 class="photo__catalog__title">
                 Мост дьявола
@@ -200,6 +228,13 @@
       </p>
 
       <picture>
+
+        <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+
         <source media="(min-width:1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800"
           height="500">
         <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648"
@@ -240,7 +275,7 @@
           </ul>
         </div>
         <div class="main-footer__info-text info-text">
-          <a class="main-footer__link main-footer__info" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__link main-footer__info main-footer__info--catalog" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано:
             <svg class="icon-html-academy" aria-hidden="true" focusable="false" width="27" height="35" role="img"
               aria-label="Логотип HTML Academy">

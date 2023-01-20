@@ -3,9 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 36px 81px;
+  padding: 36px 82px 23px;
   justify-content: space-between;
-  padding-bottom: 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +21,8 @@
 
 @media (min-width: $desktop-width) {
   .social__list {
-    padding-left: 112px;
+    padding-left: 128px;
+    padding-top: 17px;
   }
 }
 

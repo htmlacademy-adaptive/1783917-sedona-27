@@ -74,6 +74,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .intro__slogan {
+    padding: 25px 23px;
+  }
+}
+
 .intro__description {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -115,6 +121,10 @@
     padding: 0;
     padding-bottom: 35px;
     margin: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 

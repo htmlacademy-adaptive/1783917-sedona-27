@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="/css/style.min.css" as="style">
-  <link rel="preload" href="/fonts/psans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/psansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -69,7 +69,7 @@
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </p>
       <h1 class="intro__description intro__description--index ">
-        Рассмотрим 5 причин, по которым <br> Седона круче, чем Гранд каньон!
+        Рассмотрим 5 причин, по которым &nbsp; <br> Седона круче, чем Гранд каньон!
       </h1>
     </header>
 
@@ -110,19 +110,19 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--housing">
               <h3 class="advantages__title advantages__title--housing">Жильё</h3>
-              <p class="advantages__description advantages__description--housing">Рекомендуем пожить в <br> настоящем
+              <p class="advantages__description advantages__description--housing">Рекомендуем пожить в &nbsp; <br> настоящем
                 мотеле, всё как в кино!
               </p>
             </li>
             <li class="advantages__item advantages__item--food">
               <h3 class="advantages__title advantages__title--food">Еда</h3>
-              <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный <br> бургер,
+              <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный &nbsp; <br> бургер,
                 вы не разочаруетесь!
               </p>
             </li>
             <li class="advantages__item advantages__item--gift">
               <h3 class="advantages__title advantages__title--gift">Сувениры</h3>
-              <p class="advantages__description advantages__description--gift">Не только китайского, <br>но и местного
+              <p class="advantages__description advantages__description--gift">Не только китайского,&nbsp; <br>  но и местного
                 производства!
               </p>
             </li>
@@ -143,6 +143,12 @@
             <div class="sedona-bridge">
               <picture>
 
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge.webp 1x, img/photo-bridge@2x.webp 2x">
+
                 <source media="(min-width:1200px)"
                   srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" width="800" height="256">
 
@@ -157,24 +163,24 @@
           <ul class="advantages__wrapper__bridge ">
             <li class="advantages__item-list advantages__item-list--bridge">
 
-              <h3 class="advantages__title advantages__title--bridge">Небольшая <br> площадь</h3>
+              <h3 class="advantages__title advantages__title--bridge">Небольшая &nbsp; <br> площадь</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №3 —</p>
-              <p class="advantages__description advantages__description--bridge">Все интересные места находятся <br>
+              <p class="advantages__description advantages__description--bridge advantages__description--with-border">Все интересные места находятся &nbsp; <br>
                 очень близко
               </p>
 
             </li>
             <li class="advantages__item-list advantages__item-list--bridge">
-              <h3 class="advantages__title advantages__title--bridge">Красивая <br>дорога</h3>
+              <h3 class="advantages__title advantages__title--bridge">Красивая &nbsp; <br> дорога</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №4 —</p>
-              <p class="advantages__description advantages__description--bridge advantages__description--road"> Ехать в
-                седону из лас-вегаса <br> совсем не скучно!
+              <p class="advantages__description advantages__description--bridge advantages__description--road advantages__description--with-border"> Ехать в
+                седону из лас-вегаса &nbsp; <br> совсем не скучно!
               </p>
             </li>
             <li class="advantages__item-list advantages__item-list--bridge">
-              <h3 class="advantages__title advantages__title--bridge">Мало<br> туристов</h3>
+              <h3 class="advantages__title advantages__title--bridge">Мало &nbsp;<br> туристов</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №5 —</p>
-              <p class="advantages__description advantages__description--bridge">Большинство едет в гранд каньон <br> и
+              <p class="advantages__description advantages__description--bridge">Большинство едет в гранд каньон &nbsp; <br> и
                 толпится там
               </p>
 

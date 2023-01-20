@@ -387,7 +387,20 @@
       margin-top: -78px;
       background-color: rgba(0, 0, 0, 0.3);
       box-sizing: border-box;
+      padding: 16px 20px 12px 20px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__card-wrapper--plant {
+    padding: 18px 20px 12px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__card-wrapper--bridge {
+    padding: 17px 20px 12px 20px;
   }
 }
 

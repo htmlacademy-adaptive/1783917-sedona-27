@@ -29,6 +29,11 @@
   }
 }
 
+.review__field-group--1 {
+  padding-bottom: 27px;
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .review__field-group--1 {
     margin-right: 4px;
@@ -55,6 +60,11 @@
     border-right: 1px solid #e5e5e5;
     height: 381px;
   }
+}
+
+.review__field-group--2 {
+  padding-bottom: 19px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,13 +123,15 @@
 }
 
 .review__field-group--radiobuttons {
-  padding: 4px 12px 0 20px;
+  padding: 12px 13px 0 20px;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .review__field-group--radiobuttons {
     padding-top: 20px;
+    margin-bottom: 1px;
   }
 }
 
