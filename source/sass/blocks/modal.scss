@@ -154,7 +154,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -221,6 +221,10 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 70px;
+
+  br {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -244,7 +248,7 @@
 .modal__success__button {
   background-color: $accent;
   border: none;
-  padding: 18px 66px 14px 65px;
+  padding: 18px 78px 14px 72px;
   text-align: center;
   box-sizing: border-box;
   color: #ffffff;
@@ -259,8 +263,9 @@
 
 @media (min-width: $tablet-width) {
   .modal__success__button {
-    padding: 19px 156px 14px 155px;
+    padding: 17px 154px 12px 155px;
     margin: 0 auto;
+    font-size: 21px;
   }
 }
 

@@ -113,6 +113,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper--form {
+    padding: 20px 112px 20px 119px;
+  }
+}
+
 .main-footer__hashtag {
   font-family: $title;
   font-weight: 700;

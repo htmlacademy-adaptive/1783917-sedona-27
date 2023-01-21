@@ -5,6 +5,14 @@
   height: 58px;
   margin-bottom: 14px;
   cursor: pointer;
+  padding-left: 16px;
+  font-family: $title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  padding: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +40,7 @@
   background-color: rgb(255, 255, 255);
   appearance: none;
   outline: 4px solid rgb(229, 229, 229);
+  outline-offset: -4px;
 }
 
 .field:focus {
@@ -44,6 +53,7 @@
 @media (min-width: $tablet-width) {
   .field-email {
     margin-left: 0;
+    padding: 16px;
   }
 }
 
@@ -56,6 +66,8 @@
 @media (min-width: $tablet-width) {
   .field-phone {
     margin-left: 0;
+    margin-bottom: 12px;
+    padding: 16px;
   }
 }
 
@@ -72,6 +84,7 @@
     width: 404px;
     height: 58px;
     margin-bottom: 16px;
+    padding: 16px;
   }
 }
 
@@ -82,6 +95,7 @@
     width: 404px;
     height: 58px;
     margin-bottom: 16px;
+    padding: 16px;
   }
 }
 
@@ -97,6 +111,7 @@
   background-color: rgb(255, 255, 255);
   appearance: none;
   outline: 4px solid rgb(229, 229, 229);
+  outline-offset: -4px;
 }
 
 .textarea-form .field-phone:focus,

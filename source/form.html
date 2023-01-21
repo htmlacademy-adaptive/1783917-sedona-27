@@ -96,16 +96,18 @@
               Контактная информация:
             </legend>
 
-            <label for="phone" class="review__control">Контактный телефон*:
-              <input class="field field-phone" placeholder="Введите телефон" type="text" name="contact-phone" id="phone"
-                required>
+            <label for="phone" class="review__control">Контактный телефон*: <span class="button-phone phone"></span>
             </label>
-            <span class="button-letter letter"></span>
-            <label for="e-mail" class="review__control">Электронная почта*:
-              <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail"
-                required>
+            <input class="field field-phone" placeholder="Введите телефон" type="text" name="contact-phone" id="phone"
+              required>
+            <!-- </label>-->
+
+            <label for="e-mail" class="review__control">Электронная почта*: <span class="button-letter letter"></span>
             </label>
-            <span class="button-phone phone"></span>
+            <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail"
+              required>
+
+
           </fieldset>
         </div>
         <fieldset class="review__field-group review__field-group--radiobuttons">
@@ -192,7 +194,7 @@
 
     </section>
     <footer class="main-footer social">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper--form">
 
         <a class="main-footer__hashtag" href="#">#Visitsedona</a>
 
@@ -248,7 +250,7 @@
         <h2 class="modal__success__title">Ваш отзыв отправлен!</h2>
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal__success__description">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.
           </p>
           <button class="modal__success__button" type="submit">Закрыть окно</button>
         </form>
