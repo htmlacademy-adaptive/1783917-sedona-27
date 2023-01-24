@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.control__input[type="radio"]:active + .control__mark {
+.control__input[type="radio"]:not(:disabled):active + .control__mark {
   background-repeat: no-repeat;
   position: absolute;
   opacity: 30%;
@@ -55,7 +55,7 @@
   background-color: rgb(242, 242, 242);
 }
 
-.control__input[type="radio"] + .control__mark:active {
+.control__input[type="radio"]:not(:disabled) + .control__mark:active {
   background-repeat: no-repeat;
   position: absolute;
   padding: 0 auto;
@@ -68,7 +68,11 @@
   outline: 2px solid #939393;
 }
 
-.control__mark:hover {
+.control__input:disabled + .control__mark {
+  background-color: #7fffd4;
+}
+
+.control__input:not(:disabled) + .control__mark:hover {
   background-color: rgb(229, 229, 229);
 }
 

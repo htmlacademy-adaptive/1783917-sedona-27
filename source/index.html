@@ -15,7 +15,7 @@
   <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <header class="main-header">
     <a class="main-header__logo">
@@ -54,11 +54,11 @@
       </div>
     </nav>
     <div class="index-container-wrapper background-container">
-      <div class="container">
+      <!-- <div class="container"> -->
 
         <img class="main-picture-welcome-text" src="img/welcome-text-index.svg.svg" loading="lazy" width="282"
           height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон отстой.">
-      </div>
+      <!-- </div> -->
     </div>
 
   </header>
@@ -80,7 +80,7 @@
         <li class="advantages__item-list advantages__item-list--town">
           <div class="advantages__wrapper">
             <div class="blue-background">
-              <h3 class="advantages__title advantages__title--town">Настоящий городок</h3>
+              <h3 class="advantages__title advantages__title--town">Настоящий &nbsp; <br> городок</h3>
               <p class="advantages__description__number advantages__description__number--town">— №1 —</p>
               <p class="advantages__description advantages__description--town">Седона не аттракцион для
                 туристов, там течёт своя жизнь
@@ -116,7 +116,7 @@
             </li>
             <li class="advantages__item advantages__item--food">
               <h3 class="advantages__title advantages__title--food">Еда</h3>
-              <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный &nbsp; <br> бургер,
+              <p class="advantages__description advantages__description--food">Всегда заказывайте фирменный бургер,
                 вы не разочаруетесь!
               </p>
             </li>
@@ -132,9 +132,9 @@
         <li class="advantages__item-list advantages__item-list--bridge-devil">
           <div class="advantages__wrapper">
             <div class="blue-background blue-background--sedona-bridge">
-              <h3 class="advantages__title advantages__title--bridge-devil">Там есть мост дьявола</h3>
+              <h3 class="advantages__title advantages__title--bridge-devil">Там есть &nbsp; <br> мост дьявола</h3>
               <p class="advantages__description__number advantages__description__number--bridge-devil">— №2 —</p>
-              <p class="advantages__description advantages__description--bridge-devil">Да, по нему можно пройти! Если вы
+              <p class="advantages__description advantages__description--bridge-devil">Да, по нему можно пройти! Если вы &nbsp;
                 <br> осмелитесь, конечно
               </p>
 
@@ -160,37 +160,44 @@
             </div>
 
           </div>
-          <ul class="advantages__wrapper__bridge ">
+        </li>
+          <!-- <ul class="advantages__wrapper__bridge "> -->
+
             <li class="advantages__item-list advantages__item-list--bridge">
+              <div class="advantages__block advantages__block--bottom-location">
 
               <h3 class="advantages__title advantages__title--bridge">Небольшая &nbsp; <br> площадь</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №3 —</p>
               <p class="advantages__description advantages__description--bridge advantages__description--with-border">Все интересные места находятся &nbsp; <br>
                 очень близко
               </p>
-
+            </div>
             </li>
-            <li class="advantages__item-list advantages__item-list--bridge">
+            <li class="advantages__item-list advantages__item-list--bridge advantages__item-list--road">
+              <div class="advantages__block advantages__block--road">
               <h3 class="advantages__title advantages__title--bridge">Красивая &nbsp; <br> дорога</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №4 —</p>
               <p class="advantages__description advantages__description--bridge advantages__description--road advantages__description--with-border"> Ехать в
                 седону из лас-вегаса &nbsp; <br> совсем не скучно!
               </p>
+            </div>
             </li>
-            <li class="advantages__item-list advantages__item-list--bridge">
+            <li class="advantages__item-list advantages__item-list--bridge advantages__item-list--tourists">
+              <div class="advantages__block advantages__block--tourists">
               <h3 class="advantages__title advantages__title--bridge">Мало &nbsp;<br> туристов</h3>
               <p class="advantages__description__number advantages__description__number--bridge">— №5 —</p>
               <p class="advantages__description advantages__description--bridge">Большинство едет в гранд каньон &nbsp; <br> и
                 толпится там
               </p>
-
+            </div>
             </li>
-          </ul>
-        </li>
+
+          <!-- </ul> -->
+
       </ol>
     </section>
     <section class="search">
-      <h1 class="visually-hidden">Поиск гостиниц</h1>
+      <h2 class="visually-hidden">Поиск гостиниц</h2>
       <p class="search__content-title">Заинтересовались?</p>
       <p class="search__content-description">
         Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Cедоне

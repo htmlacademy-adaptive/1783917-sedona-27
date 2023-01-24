@@ -30,6 +30,17 @@
   display: block;
   color: #ffffff;
   text-decoration: none;
+  background-color: $accent;
+  height: 48px;
+  width: 48px;
+}
+
+.social__link:hover {
+  background-color: rgb(192, 102, 171);
+}
+
+.social__link:active {
+  background-color: rgb(86, 151, 189);
 }
 
 .social__item {
@@ -37,8 +48,8 @@
   height: 48px;
   margin-right: 0;
   position: relative;
-  background-color: $accent;
-  padding: 12px;
+  //background-color: $accent;
+  padding: 0;
   box-sizing: border-box;
   cursor: pointer;
 
@@ -46,19 +57,19 @@
     width: 48px;
     height: 48px;
     position: relative;
-    background-color: #81b3d2;
-    padding: 12px;
+    //background-color: #81b3d2;
+    //padding: 12px;
     box-sizing: border-box;
   }
 }
-
+/*
 .social__item:hover {
   width: 48px;
   height: 48px;
   margin-right: 0;
   position: relative;
   background-color: rgb(102, 158, 192);
-  padding: 12px;
+  //padding: 12px;
   box-sizing: border-box;
 }
 
@@ -68,10 +79,10 @@
   margin-right: 0;
   position: relative;
   background-color: rgb(84, 150, 189);
-  padding: 12px;
+  //padding: 12px;
   box-sizing: border-box;
   color: rgb(255, 255, 255, 0.3);
-}
+}*/
 
 .main-footer__link {
   text-decoration: none;
@@ -80,43 +91,43 @@
 .social__item:first-child::before {
   content: "";
   position: absolute;
-  display: block;
+  //display: block;
   background-image: url("../img/vk.svg");
-  width: 32px;
-  height: 74px;
-  left: 7px;
+  width: 48px;
+  height: 48px;
+  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px;
-  top: -14px;
+  top: 0;
 }
 
 .social__item:nth-child(2)::after {
   content: "";
   position: absolute;
-  display: block;
+  //display: block;
   background-image: url("../img/telegram.svg");
-  width: 32px;
-  height: 74px;
-  left: 7px;
+  height: 48px;
+  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px;
-  top: -14px;
+  top: 0;
+  width: 48px;
 }
 
 .social__item:nth-child(3)::after {
   content: "";
   position: absolute;
-  display: block;
+  //display: block;
   background-image: url("../img/youtube.svg");
-  width: 32px;
-  height: 74px;
-  left: 7px;
+  width: 48px;
+  height: 48px;
+  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 23px;
-  top: -13px;
+  top: 0;
 }
 
 .social__item:active::after {

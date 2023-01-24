@@ -58,14 +58,13 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper--index {
-    padding: 22px 60px 20px 61px;
+    padding: 19px 60px 29px 61px;
     display: flex;
     justify-content: space-between;
     width: 768px;
     height: 120px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding-top: 23px;
   }
 }
 
@@ -177,6 +176,7 @@
   display: flex;
   padding-top: 4px;
   align-items: center;
+  color: rgb(0, 0, 0);
 }
 
 @media (min-width: $desktop-width) {

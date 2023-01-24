@@ -154,7 +154,7 @@
   background-color: rgb(229, 229, 229);
 }
 
-.control__input[type="checkbox"]:active + .control__mark {
+.control__input[type="checkbox"]:not(:disabled):active + .control__mark {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   position: absolute;
@@ -163,9 +163,10 @@
   background-position: center;
   color: rgb(0, 0, 0);
   background-color: rgb(242, 242, 242);
+  cursor: default;
 }
 
-.control__input[type="checkbox"] + .control__mark:active {
+.control__input[type="checkbox"]:not(:disabled) + .control__mark:active {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   position: absolute;
@@ -173,4 +174,5 @@
   background-position: center;
   color: rgb(0, 0, 0);
   background-color: rgb(213, 213, 213);
+  cursor: default;
 }

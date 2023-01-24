@@ -15,7 +15,7 @@
   <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <header class="main-header">
     <a class="main-header__logo">
@@ -95,18 +95,14 @@
             <legend class="review__title review__title--info">
               Контактная информация:
             </legend>
-
-            <label for="phone" class="review__control">Контактный телефон*: <span class="button-phone phone"></span>
-            </label>
+            <label for="phone" class="review__control">Контактный телефон*:
             <input class="field field-phone" placeholder="Введите телефон" type="text" name="contact-phone" id="phone"
               required>
-            <!-- </label>-->
-
-            <label for="e-mail" class="review__control">Электронная почта*: <span class="button-letter letter"></span>
             </label>
+            <label for="e-mail" class="review__control">Электронная почта*: <!--<span class="button-letter letter"></span>-->
             <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail"
               required>
-
+            </label>
 
           </fieldset>
         </div>
@@ -130,7 +126,7 @@
             </li>
             <li class="review__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="unknown">
+                <input class="control__input visually-hidden" type="radio" name="impression" value="unknown" disabled>
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
@@ -165,7 +161,7 @@
             </li>
             <li class="review__item review__item--checkboxes review__item--rocks">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
+                <input class="control__input visually-hidden" type="checkbox" name="red-rocks" disabled>
                 <span class="control__mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>

@@ -31,18 +31,23 @@
   display: block;
   width: 70px;
   height: 51px;
-  background-color: $accent;
+  background-color: transparent;
   cursor: pointer;
   border: none;
-
-  &:hover,
-  &:active {
-    background-color: $accent;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.main-nav__toggle:active {
+  background-color: $accent;
+  opacity: 0.3;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -167,7 +172,7 @@
   top: -40px;
   right: -160px;
   z-index: 11;
-  background-color: $accent;
+  //background-color: $accent;
 
   &::before,
   &::after {
@@ -188,18 +193,20 @@
   &::after {
     transform: rotate(-45deg);
   }
-
+}
+/*
   &:active::before,
   &:active::after {
-    background-color: rgb(255, 255, 255, 0.3);
+    opacity: 0.3;
   }
-
+}
+/*
   &:hover::before,
   &:hover::after {
     background-color: rgb(255, 255, 255, 0.6);
-    opacity: 60%;
+    //opacity: 60%;
   }
-}
+}*/
 
 .main-nav__list {
   padding: 0;
