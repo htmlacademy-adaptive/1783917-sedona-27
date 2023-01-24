@@ -26,6 +26,23 @@
   }
 }
 
+.social__item {
+  width: 48px;
+  height: 48px;
+  margin-right: 0;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
 .social__link {
   display: block;
   color: #ffffff;
@@ -35,105 +52,38 @@
   width: 48px;
 }
 
+.social__link::after {
+  content: "";
+  position: absolute;
+  height: 48px;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  top: 0;
+  width: 48px;
+}
+
+.social__link--vkontakte::after {
+  background-image: url("../img/vk.svg");
+}
+
+.social__link--telegram::after {
+  background-image: url("../img/telegram.svg");
+}
+
+.social__link--youtube::after {
+  background-image: url("../img/youtube.svg");
+}
+
 .social__link:hover {
-  background-color: rgb(192, 102, 171);
+  background-color: rgb(102, 158, 192);
 }
 
 .social__link:active {
   background-color: rgb(86, 151, 189);
 }
 
-.social__item {
-  width: 48px;
-  height: 48px;
-  margin-right: 0;
-  position: relative;
-  //background-color: $accent;
-  padding: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    width: 48px;
-    height: 48px;
-    position: relative;
-    //background-color: #81b3d2;
-    //padding: 12px;
-    box-sizing: border-box;
-  }
-}
-/*
-.social__item:hover {
-  width: 48px;
-  height: 48px;
-  margin-right: 0;
-  position: relative;
-  background-color: rgb(102, 158, 192);
-  //padding: 12px;
-  box-sizing: border-box;
-}
-
-.social__item:active {
-  width: 48px;
-  height: 48px;
-  margin-right: 0;
-  position: relative;
-  background-color: rgb(84, 150, 189);
-  //padding: 12px;
-  box-sizing: border-box;
-  color: rgb(255, 255, 255, 0.3);
-}*/
-
-.main-footer__link {
-  text-decoration: none;
-}
-
-.social__item:first-child::before {
-  content: "";
-  position: absolute;
-  //display: block;
-  background-image: url("../img/vk.svg");
-  width: 48px;
-  height: 48px;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  top: 0;
-}
-
-.social__item:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  //display: block;
-  background-image: url("../img/telegram.svg");
-  height: 48px;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  top: 0;
-  width: 48px;
-}
-
-.social__item:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  //display: block;
-  background-image: url("../img/youtube.svg");
-  width: 48px;
-  height: 48px;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 23px;
-  top: 0;
-}
-
-.social__item:active::after {
-  opacity: 0.3;
-}
-
-.social__item:active::before {
+.social__link:active::after {
   opacity: 0.3;
 }

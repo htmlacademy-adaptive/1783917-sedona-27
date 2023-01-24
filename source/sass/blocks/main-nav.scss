@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $accent;
+  //background-color: $accent;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -172,7 +172,6 @@
   top: -40px;
   right: -160px;
   z-index: 11;
-  //background-color: $accent;
 
   &::before,
   &::after {
@@ -194,19 +193,6 @@
     transform: rotate(-45deg);
   }
 }
-/*
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
-  }
-}
-/*
-  &:hover::before,
-  &:hover::after {
-    background-color: rgb(255, 255, 255, 0.6);
-    //opacity: 60%;
-  }
-}*/
 
 .main-nav__list {
   padding: 0;
@@ -259,3 +245,19 @@
     padding-right: 400px;
   }
 }
+
+/* ЕСЛИ НЕ РАБОТАЕТ JS - СТИЛИ, ЧТОБЫ РАБОТАЛО МЕНЮ
+
+.no-js .main-nav__toggle {
+  display: none;
+}
+
+.no-js .site-list__item,
+.no-js .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav {
+  padding-top: 55px;
+}
+*/

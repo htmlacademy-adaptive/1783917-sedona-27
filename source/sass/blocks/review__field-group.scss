@@ -37,8 +37,9 @@
 @media (min-width: $tablet-width) {
   .review__field-group--1 {
     margin-right: 4px;
-    padding-right: 42px;
+    padding: 0;
     margin-bottom: 0;
+    padding-right: 42px;
   }
 }
 
@@ -59,13 +60,13 @@
   .review__field-group:nth-child(1) {
     padding-right: 63px;
     border-right: 1px solid #e5e5e5;
-    height: 381px;
+    height: auto;
   }
 }
 
 .review__field-group--2 {
   padding-bottom: 19px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -89,7 +90,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   margin-left: -5px;
 }
 
@@ -131,7 +132,7 @@
 
 @media (min-width: $tablet-width) {
   .review__field-group--radiobuttons {
-    padding-top: 20px;
+    padding-top: 21px;
     margin-bottom: 1px;
   }
 }
@@ -139,6 +140,7 @@
 @media (min-width: $desktop-width) {
   .review__field-group--radiobuttons {
     width: 1200px;
-    height: 179px;
+    height: auto;
+    padding: 18px 33px 59px 33px;
   }
 }

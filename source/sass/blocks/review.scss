@@ -29,7 +29,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-left: 17px;
   display: block;
   text-indent: 17px;
 
@@ -45,12 +44,6 @@
     display: block;
   }
 }
-/*
-@media (min-width: $desktop-width) {
-  .review__control {
-    padding-left: 83px;
-  }
-}*/
 
 .review__list {
   list-style: none;
@@ -103,7 +96,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 856px;
-    height: 124px;
+    height: auto;
     margin: 0 auto;
     padding: 0 3px 0 17px;
     box-sizing: border-box;
@@ -225,7 +218,7 @@
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 17px;
-    padding-top: 32px;
+    padding-top: 0;
     display: block;
     margin: 0 auto;
   }
@@ -248,7 +241,7 @@
 
 @media (min-width: $desktop-width) {
   .review__title--checkboxes {
-    padding: 36px 0 14px;
+    padding: 0 0 14px;
     width: 308px;
   }
 }

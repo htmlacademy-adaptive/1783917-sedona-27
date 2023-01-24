@@ -12,9 +12,9 @@
   .checkboxes {
     width: 768px;
     margin: 0 auto;
-    height: 253px;
+    height: auto;
     border: none;
-    padding: 26px 23px 19px;
+    padding: 26px 23px 15px;
     box-sizing: border-box;
     margin-bottom: -12px;
   }
@@ -23,12 +23,11 @@
 @media (min-width: $desktop-width) {
   .checkboxes {
     width: 1200px;
-    margin: 0 auto;
-    height: 257px;
+    height: auto;
     border-bottom: none;
-    padding: 26px 23px 19px;
+    padding: 26px 23px 15px;
     box-sizing: border-box;
-    margin-bottom: 9px;
+    margin: 0;
   }
 }
 

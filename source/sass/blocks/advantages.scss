@@ -15,7 +15,6 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    //padding-top: 8px;
     width: 1200px;
   }
 }
@@ -54,9 +53,7 @@
 @media (min-width: $tablet-width) {
   .advantages__list {
     display: flex;
-    //justify-content: space-between;
     width: 768px;
-    //height: 332px;
     padding: 0;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -68,7 +65,6 @@
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    //height: 332px;
   }
 }
 
@@ -82,7 +78,6 @@
 @media (min-width: $tablet-width) {
   .advantages__item-list--town {
     width: 768px;
-    //margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
     display: block;
@@ -126,7 +121,6 @@
   text-align: center;
   margin: 0;
   padding-bottom: 10px;
-  //padding-top: 51px;
 
   @media (min-width: $tablet-width) {
     font-family: $title;
@@ -146,7 +140,6 @@
   text-align: center;
   color: #ffffff;
   padding-bottom: 10px;
-  //padding-top: 54px;
   margin: 0 auto;
 
   br {
@@ -172,7 +165,6 @@
 }
 
 .advantages__title--housing {
-  //padding: 0 10px 0 0;
   margin: 0;
   padding-bottom: 18px;
   text-align: left;
@@ -193,7 +185,6 @@
 }
 
 .advantages__title--food {
-  //padding: 0 8px 10px;
   margin: 0;
   padding-bottom: 18px;
   text-align: left;
@@ -214,14 +205,11 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  //padding: 0 18px;
   margin: 0;
-  //padding-bottom: 40px;
 }
 
 .advantages__description--food {
   text-align: left;
-  //padding: 4px 7px;
   padding-bottom: 30px;
   display: block;
 
@@ -234,7 +222,6 @@
   .advantages__description--food {
     text-align: center;
     padding: 0;
-    //padding: 4px 20px 23px;
 
     br {
       display: none;
@@ -305,7 +292,6 @@
 
 .advantages__description--bridge {
   //border-bottom: 1px solid rgba(214, 214, 214, 1);
-  //padding-bottom: 24px;
 
   br {
     display: none;
@@ -334,19 +320,12 @@
 @media (min-width: $desktop-width) {
   .advantages__description--bridge {
     border-bottom: none;
-    //padding: 6px 7px;
 
     br {
       display: none;
     }
   }
 }
-/*
-.advantages__description--road {
-  @media (min-width: $tablet-width) {
-    padding: 4px 23px;
-  }
-}*/
 
 .advantages__description--blue {
   color: #ffffff;
@@ -387,7 +366,6 @@
 }
 
 .advantages__description--bridge-devil {
-  //padding-bottom: 54px;
   color: #ffffff;
   padding: 0;
 
@@ -421,7 +399,6 @@
 
 @media (min-width: $tablet-width) {
   .advantages__title--bridge-devil {
-    //padding: 40px 53px 0;
     padding-bottom: 11px;
 
     br {
@@ -450,14 +427,7 @@
   color: #ffffff;
   padding: 0;
   margin: 0;
-  //padding-bottom: 40px;
 }
-/*
-@media (min-width: $tablet-width) {
-  .advantages__description--town {
-    padding: 0 16px 40px;
-  }
-}*/
 
 .advantages__item {
   padding: 0;
@@ -480,8 +450,6 @@
 .advantages__item-list--bridge {
   box-sizing: border-box;
   margin-bottom: -23px;
-  //padding-left: 16px;
-  //padding-right: 16px;
   position: relative;
   background-color: #eeeeee;
   padding: 31px 32px 42px;
@@ -493,7 +461,6 @@
     width: 256px;
     box-sizing: border-box;
     margin-bottom: -23px;
-    //padding-right: 17px;
     position: relative;
     padding: 39px 38px 47px;
   }
@@ -507,7 +474,7 @@
 
 .advantages__item-list--bridge:nth-child(1) {
   @media (min-width: $desktop-width) {
-    padding: 43px 38px 14px 44px;
+    padding: 40px 38px 14px 44px;
     box-sizing: border-box;
     width: 400px;
   }
@@ -541,7 +508,6 @@
 
 .advantages__item--food {
   color: #000000;
-  //width: 256px;
   margin: 0;
   padding-left: 46px;
   box-sizing: border-box;
@@ -566,7 +532,6 @@
 
 .advantages__item--gift {
   color: #000000;
-  //width: 256px;
   margin: 0;
   padding-left: 42px;
   box-sizing: border-box;
@@ -583,17 +548,8 @@
   }
 }
 
-/*
-  @media (min-width: $desktop-width) {
-    width: 400px;
-    padding: 158px 56px 83px 57px;
-    box-sizing: border-box;
-  }
-}*/
-
 .advantages__item--housing {
   color: #000000;
-  //width: 256px;
   margin: 0;
   padding-left: 43px;
   box-sizing: border-box;
@@ -604,7 +560,6 @@
 @media (min-width: $tablet-width) {
   .advantages__item--housing {
     width: 256px;
-    //height: 330px;
     padding: 158px 32px 62px 35px;
     box-sizing: border-box;
   }
@@ -617,16 +572,6 @@
     box-sizing: border-box;
   }
 }
-
-/*
-@media (min-width: $desktop-width) {
-  .advantages__item--housing {
-    width: 400px;
-    padding: 160px 22px 83px 21px;
-    //height: 330px;
-    box-sizing: border-box;
-  }
-}*/
 
 .advantages__description--housing {
   text-align: left;
@@ -828,7 +773,6 @@
 }
 
 .sedona-bridge {
-  //margin: -20px auto;
   height: 100%;
   object-fit: cover;
 
@@ -894,7 +838,6 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 33px 20px 7px;
-    //height: 254px;
     flex-wrap: wrap;
   }
 }
@@ -904,7 +847,6 @@
     display: flex;
     width: 1200px;
     padding: 0;
-    //height: 256px;
   }
 }
 
@@ -939,24 +881,6 @@
     width: 1200px;
   }
 }
-/*
-@media (min-width: 768px) {
-  .advantages__block {
-    padding: 40px 38px 67px;
-  }
-}
-
-@media (min-width: 768px) {
-  .advantages__block--road {
-    padding: 39px 52px 47px;
-  }
-}
-
-@media (min-width: 768px) {
-  .advantages__block--tourists {
-    padding: 39px 52px 47px;
-  }
-}*/
 
 .advantages__item-list--tourists {
   padding-bottom: 28px;
@@ -970,7 +894,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__item-list--road {
-    padding: 43px 68px 14px 70px;
+    padding: 38px 68px 19px 70px;
   }
 }
 
@@ -982,6 +906,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__item-list--tourists {
-    padding: 44px 52px 61px;
+    padding: 38px 52px 63px;
+    box-sizing: border-box;
   }
 }

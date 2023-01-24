@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
   border: none;
   width: 280px;
-  height: 58px;
+  height: auto;
   // margin-bottom: 14px;
   cursor: pointer;
   font-family: $title;
@@ -12,12 +12,14 @@
   color: rgb(0, 0, 0);
   box-sizing: border-box;
   padding: 16px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .field {
     padding-left: 13px;
     //margin-bottom: 16px;
+    margin-bottom: 17px;
 
     @media (min-width: $desktop-width) {
       background-color: #f2f2f2;
@@ -78,6 +80,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 73px;
+  margin-bottom: -1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +89,7 @@
     //margin-bottom: 12px;
     padding: 16px;
     padding-right: 73px;
+    margin-bottom: -2px;
   }
 }
 
@@ -101,7 +105,7 @@
     border: none;
     width: 404px;
     height: 58px;
-    margin-bottom: 16px;
+    margin-bottom: 1px;
     padding: 16px;
     padding-right: 73px;
   }
