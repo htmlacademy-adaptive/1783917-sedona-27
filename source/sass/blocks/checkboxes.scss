@@ -1,20 +1,17 @@
 .checkboxes {
   width: 320px;
-  margin: 0 auto;
-  padding: 4px 12px 20px 20px;
+  padding: 12px 12px 12px 20px;
   box-sizing: border-box;
-  height: 327px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto 11px;
 }
 
 @media (min-width: $tablet-width) {
   .checkboxes {
     width: 768px;
     margin: 0 auto;
-    height: 253px;
+    height: auto;
     border: none;
-    padding: 26px 23px 19px;
+    padding: 26px 23px 3px;
     box-sizing: border-box;
     margin-bottom: -12px;
   }
@@ -23,12 +20,12 @@
 @media (min-width: $desktop-width) {
   .checkboxes {
     width: 1200px;
-    margin: 0 auto;
-    height: 257px;
+    height: auto;
     border-bottom: none;
-    padding: 26px 23px 19px;
+    padding: 26px 23px 15px;
     box-sizing: border-box;
-    margin-bottom: 14px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -154,7 +151,7 @@
   background-color: rgb(229, 229, 229);
 }
 
-.control__input[type="checkbox"]:active + .control__mark {
+.control__input[type="checkbox"]:not(:disabled):active + .control__mark {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   position: absolute;
@@ -163,9 +160,10 @@
   background-position: center;
   color: rgb(0, 0, 0);
   background-color: rgb(242, 242, 242);
+  cursor: default;
 }
 
-.control__input[type="checkbox"] + .control__mark:active {
+.control__input[type="checkbox"]:not(:disabled) + .control__mark:active {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   position: absolute;
@@ -173,4 +171,64 @@
   background-position: center;
   color: rgb(0, 0, 0);
   background-color: rgb(213, 213, 213);
+  cursor: default;
+}
+
+.checkboxes-border::after {
+  position: absolute;
+  top: -94px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  background-color: rgb(229, 229, 229);
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes-border::after {
+    position: absolute;
+    right: 35px;
+    top: -42px;
+    left: 80px;
+    height: 1px;
+    width: 123px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes-border::after {
+    position: absolute;
+    top: -39px;
+    left: 120px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes-border::before {
+    position: absolute;
+    top: -42px;
+    left: 607px;
+    height: 1px;
+    width: 123px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes-border::before {
+    position: absolute;
+    top: -39px;
+    left: 800px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
 }

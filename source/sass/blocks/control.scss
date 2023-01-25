@@ -4,6 +4,13 @@
   padding-left: 42px;
   cursor: pointer;
   list-style: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .control {
+    margin-bottom: 25px;
+  }
 }
 
 .control__label {
@@ -14,7 +21,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .control__mark {
@@ -45,7 +52,7 @@
   cursor: pointer;
 }
 
-.control__input[type="radio"]:active + .control__mark {
+.control__input[type="radio"]:not(:disabled):active + .control__mark {
   background-repeat: no-repeat;
   position: absolute;
   opacity: 30%;
@@ -55,7 +62,7 @@
   background-color: rgb(242, 242, 242);
 }
 
-.control__input[type="radio"] + .control__mark:active {
+.control__input[type="radio"]:not(:disabled) + .control__mark:active {
   background-repeat: no-repeat;
   position: absolute;
   padding: 0 auto;
@@ -67,8 +74,12 @@
 .control__input:focus + .control__mark {
   outline: 2px solid #939393;
 }
+//DISABLED
+.control__input:disabled + .control__mark {
+  background-color: rgb(229, 229, 229);
+}
 
-.control__mark:hover {
+.control__input:not(:disabled) + .control__mark:hover {
   background-color: rgb(229, 229, 229);
 }
 

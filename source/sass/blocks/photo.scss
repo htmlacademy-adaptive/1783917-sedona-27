@@ -16,7 +16,7 @@
 @media (min-width: $desktop-width) {
   .photo--wrapper {
     width: 1200px;
-    padding-top: 55px;
+    padding-top: 0;
   }
 }
 
@@ -29,12 +29,23 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: $tablet-width) {
+  .photo__card__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+    width: 768px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .photo__card__list {
-    height: 667px;
+    //height: 667px;
     width: 1200px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -179,13 +190,12 @@
 
 @media (min-width: $tablet-width) {
   .photo__card__item:nth-child(2) {
-    margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
     width: 324px;
     padding: 0;
     box-sizing: border-box;
-    height: 267px;
-    margin-bottom: 78px;
+    //height: 267px;
+    margin: 0;
     display: block;
 
     @media (min-width: $desktop-width) {
@@ -205,13 +215,12 @@
 
 @media (min-width: $tablet-width) {
   .photo__card__item:nth-child(3) {
-    margin: 0 auto;
+    margin: 0;
     border-bottom: 1px solid #e5e5e5;
     width: 324px;
     padding: 0;
     box-sizing: border-box;
-    height: 267px;
-    margin-bottom: 78px;
+    //height: 267px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -235,8 +244,7 @@
     margin: 0;
     box-sizing: border-box;
     justify-content: flex-start;
-    height: 267px;
-    margin-bottom: 124px;
+    //height: 267px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -254,12 +262,6 @@
   padding: 0;
   margin-left: -4px;
 }
-/*
-@media (min-width: $tablet-width) {
-  .like-icon:nth-child(1) {
-    margin: -11px 0 0 3px;
-  }
-}*/
 
 @media (min-width: $tablet-width) {
   .like-icon:nth-child(2) {
@@ -385,6 +387,7 @@
 @media (min-width: $tablet-width) {
   .photo__card-wrapper--road {
     background-color: rgb(234, 234, 234);
+    padding: 21px 21px 12px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -393,7 +396,32 @@
       margin-top: -78px;
       background-color: rgba(0, 0, 0, 0.3);
       box-sizing: border-box;
+      padding: 16px 20px 12px 20px;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo__card-wrapper--plant {
+    padding: 21px 21px 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__card-wrapper--plant {
+    padding: 18px 20px 12px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo__card-wrapper--bridge {
+    padding: 21px 21px 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__card-wrapper--bridge {
+    padding: 17px 20px 12px 20px;
   }
 }
 

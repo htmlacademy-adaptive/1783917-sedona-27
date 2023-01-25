@@ -2,21 +2,21 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-top: 15px;
+  padding: 19px 25px 17px;
   margin-bottom: 0;
+  position: relative;
 
   &::after {
     display: block;
     position: absolute;
     content: "";
     background-image: url("../img/intro-triangle-bottom-decorative-part.svg");
-    width: 100%;
+    width: 320px;
     height: 37px;
-    margin: -20px 0;
-    left: 0;
-    background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+    left: 0;
+    background-position: center;
   }
 }
 
@@ -24,6 +24,7 @@
   .intro {
     width: 484px;
     margin-bottom: 22px;
+    padding: 39px 0 0;
 
     &::after {
       display: none;
@@ -56,7 +57,6 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0 26px;
   padding-bottom: 35px;
 }
 
@@ -69,7 +69,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    padding: 27px 19px;
+    padding: 0;
     padding-bottom: 27px;
   }
 }
@@ -81,8 +81,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 10px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -115,6 +114,10 @@
     padding: 0;
     padding-bottom: 35px;
     margin: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -157,7 +160,7 @@
       width: 520px;
       box-sizing: border-box;
       margin: 0 auto;
-      padding: 0 0 33px;
+      padding: 0 0 42px;
       margin-left: -19px;
     }
   }

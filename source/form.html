@@ -10,13 +10,16 @@
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+      <img src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седона.">
     </a>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +53,8 @@
     </nav>
     <div class="background-container-catalog ">
       <div class="container-wrapper container-wrapper--catalog container-wrapper--form">
-        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" width="229" height="39" alt="Логотип Седона.">
+        <img class="sedona-logotype-form" src="img/sedona-logo-form.svg" loading="lazy" width="229" height="39"
+          alt="Логотип Седона.">
       </div>
     </div>
   </header>
@@ -91,20 +95,19 @@
             <legend class="review__title review__title--info">
               Контактная информация:
             </legend>
-
             <label for="phone" class="review__control">Контактный телефон*:
               <input class="field field-phone" placeholder="Введите телефон" type="text" name="contact-phone" id="phone"
                 required>
             </label>
-            <span class="button-letter letter"></span>
             <label for="e-mail" class="review__control">Электронная почта*:
+              <!--<span class="button-letter letter"></span>-->
               <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail"
                 required>
             </label>
-            <span class="button-phone phone"></span>
+
           </fieldset>
         </div>
-        <fieldset class="review__field-group review__field-group--radiobuttons">
+        <fieldset class="review__field-group review__field-group--radiobuttons review__field-group--radiobuttons-border">
           <legend class="review__title review__title--radiobuttons">Ваше общее впечатление:</legend>
           <ul class="review__list review__list--radiobuttons">
             <li class="review__item">
@@ -132,7 +135,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review__field-group checkboxes">
+        <fieldset class="review__field-group checkboxes checkboxes-border">
 
           <legend class="review__title review__title--checkboxes">Посещенные достопримечательности:</legend>
           <ul class="review__list review__list--checkboxes">
@@ -187,70 +190,70 @@
       </form>
 
     </section>
-    <footer class="main-footer social">
-      <div class="main-footer__wrapper">
-
-        <a class="main-footer__hashtag" href="#">#Visitsedona</a>
-
-        <div class=" main-footer__social social ">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-
-                <span class="visually-hidden" hidden> Мы в Вконтакте.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-
-                <span class="visually-hidden" hidden> Мы в Телеграме.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-
-
-                <span class="visually-hidden" hidden> Мы в
-                  Ютубе.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__info-text info-text">
-          <a class="main-footer__link main-footer__info" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано:
-            <svg class="icon-html-academy" aria-hidden="true" focusable="false" width="27" height="35" role="img"
-              aria-label="Логотип HTML Academy">
-              <use href="img/sprite.svg#htmlacademy"></use>
-            </svg>
-
-          </a>
-        </div>
-      </div>
-    </footer>
-    <section class="modal modal--failure">
-      <div class="modal__container modal__container--close">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="modal__description">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-          </p>
-          <button class="modal__failure" type="submit">OK</button>
-        </form>
-      </div>
-    </section>
-    <section class="modal modal--success">
-      <div class="modal__container modal__container--close">
-        <h2 class="modal__success__title">Ваш отзыв отправлен!</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="modal__success__description">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-          </p>
-          <button class="modal__success__button" type="submit">Закрыть окно</button>
-        </form>
-      </div>
-    </section>
   </main>
+  <footer class="main-footer social">
+    <div class="main-footer__wrapper main-footer__wrapper--form">
+
+      <a class="main-footer__hashtag" href="#">#Visitsedona</a>
+
+      <div class=" main-footer__social social ">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+
+              <span class="visually-hidden" hidden> Мы в Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+
+              <span class="visually-hidden" hidden> Мы в Телеграме.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+
+
+              <span class="visually-hidden" hidden> Мы в
+                Ютубе.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__info-text info-text">
+        <a class="main-footer__link main-footer__info" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано:
+          <svg class="icon-html-academy" aria-hidden="true" focusable="false" width="27" height="35" role="img"
+            aria-label="Логотип HTML Academy">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+
+        </a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal--failure">
+    <div class="modal__container modal__container--close">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal__description">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="modal__failure" type="submit">OK</button>
+      </form>
+    </div>
+  </section>
+  <section class="modal modal--success">
+    <div class="modal__container modal__container--close">
+      <h2 class="modal__success__title">Ваш отзыв отправлен!</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal__success__description">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <button class="modal__success__button" type="submit">Закрыть окно</button>
+      </form>
+    </div>
+  </section>
   <script src="js/script.js" defer></script>
 </body>
 

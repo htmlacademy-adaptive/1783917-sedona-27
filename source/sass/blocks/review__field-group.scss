@@ -5,7 +5,6 @@
   margin-bottom: 29px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
   position: relative;
 }
 
@@ -29,9 +28,16 @@
   }
 }
 
+.review__field-group--1 {
+  padding-bottom: 27px;
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .review__field-group--1 {
     margin-right: 4px;
+    padding: 0;
+    margin-bottom: 0;
     padding-right: 42px;
   }
 }
@@ -42,12 +48,27 @@
   }
 }
 
-/*
+.review__field-group--1::after {
+  background-color: #dbdbdb;
+  position: absolute;
+  top: -66px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  content: "";
+}
+
 @media (min-width: $tablet-width) {
-  .review__field-group:nth-child(1) {
-    padding-right: 42px;
+  .review__field-group--1::after {
+    background-color: transparent;
   }
-}*/
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--1::after {
+    background-color: transparent;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .review__field-group:nth-child(2) {
@@ -60,8 +81,13 @@
   .review__field-group:nth-child(1) {
     padding-right: 63px;
     border-right: 1px solid #e5e5e5;
-    height: 381px;
+    height: auto;
   }
+}
+
+.review__field-group--2 {
+  padding-bottom: 19px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,6 +102,28 @@
   }
 }
 
+.review__field-group--2::after {
+  background-color: #dbdbdb;
+  position: absolute;
+  top: -67px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--2::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--2::after {
+    background-color: transparent;
+  }
+}
+
 .review__title {
   margin: 0;
   padding: 0;
@@ -85,7 +133,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   margin-left: -5px;
 }
 
@@ -120,19 +168,130 @@
 }
 
 .review__field-group--radiobuttons {
-  padding: 4px 12px 0 20px;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 13px 0 20px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .review__field-group--radiobuttons {
-    padding-top: 20px;
+    padding: 20px 111px 27px 114px;
+    margin: 0 auto;
+    width: 768px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__field-group--radiobuttons {
     width: 1200px;
-    height: 179px;
+    height: auto;
+    padding: 18px 33px 42px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -31px;
+    left: 56px;
+    height: 1px;
+    width: 129px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -51px;
+    left: 121px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+.review__field-group--radiobuttons-border::before {
+  position: absolute;
+  top: -70px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  background-color: rgb(229, 229, 229);
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -31px;
+    left: 584px;
+    height: 1px;
+    width: 129px;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -51px;
+    left: 802px;
+    height: 1px;
+    width: 281px;
+    content: "";
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -31px;
+    left: 56px;
+    height: 1px;
+    width: 129px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -51px;
+    left: 121px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -31px;
+    left: 584px;
+    height: 1px;
+    width: 129px;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -51px;
+    left: 802px;
+    height: 1px;
+    width: 281px;
+    content: "";
   }
 }

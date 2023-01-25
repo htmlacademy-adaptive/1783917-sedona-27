@@ -6,11 +6,12 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 47px;
+  padding: 15px 0;
   background-color: $accent;
   text-decoration: none;
   box-sizing: border-box;
   display: block;
+  width: 284px;
 }
 
 .button-search:hover {
@@ -56,4 +57,23 @@
   text-decoration: none;
   box-sizing: border-box;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .button-search {
+    font-family: $title;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $accent;
+    text-decoration: none;
+    padding: 15px 122px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 auto;
+    width: 458px;
+  }
 }
