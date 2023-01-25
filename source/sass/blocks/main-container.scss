@@ -57,7 +57,6 @@
     text-transform: uppercase;
     text-align: center;
     padding: 33px 373px 76px;
-    //width: 458px;
   }
 }
 
@@ -189,13 +188,6 @@
     }
   }
 }
-/*
-@media (min-width: $desktop-width) {
-  .intro__desription {
-    width: 484px;
-    margin: 0;
-  }
-}*/
 
 @media (min-width: $tablet-width) {
   .main-container__description {

@@ -3,7 +3,6 @@
   border: none;
   width: 280px;
   height: auto;
-  // margin-bottom: 14px;
   cursor: pointer;
   font-family: $title;
   font-weight: 700;
@@ -18,7 +17,6 @@
 @media (min-width: $tablet-width) {
   .field {
     padding-left: 13px;
-    //margin-bottom: 16px;
     margin-bottom: 17px;
 
     @media (min-width: $desktop-width) {
@@ -86,7 +84,6 @@
 @media (min-width: $tablet-width) {
   .field-phone {
     margin-left: 0;
-    //margin-bottom: 12px;
     padding: 16px;
     padding-right: 73px;
     margin-bottom: -2px;

@@ -9,7 +9,7 @@
   .advantages {
     margin: 0 auto;
     padding: 0;
-    width: 786px;
+    width: 768px;
   }
 }
 
@@ -481,15 +481,6 @@
     width: 400px;
   }
 }
-/*
-.advantages__item-list--bridge:nth-child(1) {
-  @media (min-width: $desktop-width) {
-    padding: 39px 38px 51px 44px;
-    box-sizing: border-box;
-    width: 400px;
-  }
-}*/
-
 
 @media (min-width: $tablet-width) {
   .advantages__item-list--bridge-1 {
@@ -941,7 +932,6 @@
     box-sizing: border-box;
   }
 }
-
 
 .advantages__item-list--tourists::after {
   position: absolute;

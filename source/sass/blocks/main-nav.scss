@@ -1,5 +1,4 @@
 .main-nav {
-  //background-color: $accent;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -10,7 +9,6 @@
   margin: -54px auto;
   min-height: 55px;
   position: relative;
-  padding-top: 55px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -149,10 +147,6 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
 .main-nav--nojs .main-nav__wrapper {
   min-height: 0;
 }
@@ -248,17 +242,17 @@
   }
 }
 
-//ЕСЛИ НЕ РАБОТАЕТ JS - СТИЛИ, ЧТОБЫ РАБОТАЛО МЕНЮ
-.no-js .main-nav__toggle {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
-.no-js .site-list__item,
-.no-js .main-nav__wrapper {
+.main-nav--nojs .site-list__item,
+.main-nav--nojs .main-nav__wrapper {
   display: block;
 }
 
-/*.main-nav {
-  padding-top: 55px;
-}*/
-
+@media (max-width: 767px) {
+  .main-nav--nojs.main-nav {
+    padding-top: 55px;
+  }
+}

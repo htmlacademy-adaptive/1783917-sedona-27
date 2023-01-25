@@ -56,7 +56,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 576px;
-    //min-height: 124px;
     margin: 0 auto;
     padding: 0 3px 00 56px;
     box-sizing: border-box;
@@ -69,7 +68,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 856px;
-    //height: 124px;
     margin: 0 auto;
     padding: 0 3px 0 17px;
     box-sizing: border-box;
@@ -255,28 +253,6 @@
     padding: 43px 76px 25px 50px;
   }
 }
-/*
-@media (min-width: $tablet-width) {
-  .review__list--checkboxes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 480px;
-    margin: 0 auto;
-    padding: 0 16px 0 17px;
-    box-sizing: border-box;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 918px;
-      margin: 0 auto;
-      padding: 28px 27px 10px 42px;
-      box-sizing: border-box;
-    }
-  }
-}*/
 
 @media (min-width: $tablet-width) {
   .review__list--checkboxes {
@@ -293,31 +269,12 @@
 @media (min-width: $desktop-width) {
   .review__list--checkboxes {
     display: grid;
-    width: 995px;
+    width: 999px;
     margin: 0 auto;
-    padding: 28px 79px 14px 85px;
+    padding: 28px 94px 14px 83px;
     box-sizing: border-box;
-    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
-    gap: 40px;
-    grid-template-columns: 194px 192px 201px 169px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .review__item--checkboxes {
-    width: 190px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review__item--checkboxes {
-    width: 164px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review__item--rocks {
-    margin-left: -22px;
+    gap: 33px;
+    grid-template-columns: 204px 202px 184px 166px;
   }
 }
 
