@@ -4,6 +4,13 @@
   padding-left: 42px;
   cursor: pointer;
   list-style: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .control {
+    margin-bottom: 25px;
+  }
 }
 
 .control__label {
@@ -14,7 +21,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .control__mark {

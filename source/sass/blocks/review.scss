@@ -115,7 +115,7 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 16px;
       padding: 0;
-      height: 31px;
+      //height: 31px;
     }
   }
 }
@@ -255,7 +255,7 @@
     padding: 43px 76px 25px 50px;
   }
 }
-
+/*
 @media (min-width: $tablet-width) {
   .review__list--checkboxes {
     display: flex;
@@ -275,6 +275,31 @@
       padding: 28px 27px 10px 42px;
       box-sizing: border-box;
     }
+  }
+}*/
+
+@media (min-width: $tablet-width) {
+  .review__list--checkboxes {
+    display: grid;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 92px 14px 160px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__list--checkboxes {
+    display: grid;
+    width: 995px;
+    margin: 0 auto;
+    padding: 28px 79px 14px 85px;
+    box-sizing: border-box;
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+    gap: 40px;
+    grid-template-columns: 194px 192px 201px 169px;
   }
 }
 

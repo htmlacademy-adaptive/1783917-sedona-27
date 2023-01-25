@@ -10,6 +10,7 @@
   margin: -54px auto;
   min-height: 55px;
   position: relative;
+  padding-top: 55px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -29,8 +30,8 @@
   right: 0;
   z-index: 2;
   display: block;
-  width: 70px;
-  height: 51px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -52,9 +53,10 @@
 
 .main-nav--closed .main-nav__toggle {
   top: -39px;
-  right: -170px;
+  right: -150px;
   z-index: 11;
-  background-color: #ffffff;
+  background-color: transparent;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -178,7 +180,7 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 26px;
+    left: 7px;
     width: 24px;
     height: 4px;
     background-color: #ffffff;
@@ -246,8 +248,7 @@
   }
 }
 
-/* ЕСЛИ НЕ РАБОТАЕТ JS - СТИЛИ, ЧТОБЫ РАБОТАЛО МЕНЮ
-
+//ЕСЛИ НЕ РАБОТАЕТ JS - СТИЛИ, ЧТОБЫ РАБОТАЛО МЕНЮ
 .no-js .main-nav__toggle {
   display: none;
 }
@@ -257,7 +258,7 @@
   display: block;
 }
 
-.main-nav {
+/*.main-nav {
   padding-top: 55px;
-}
-*/
+}*/
+

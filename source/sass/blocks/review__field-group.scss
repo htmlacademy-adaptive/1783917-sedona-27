@@ -186,7 +186,7 @@
   .review__field-group--radiobuttons {
     width: 1200px;
     height: auto;
-    padding: 18px 33px 62px;
+    padding: 18px 33px 42px;
   }
 }
 
@@ -222,6 +222,55 @@
   width: 320px;
   background-color: rgb(229, 229, 229);
   content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -31px;
+    left: 584px;
+    height: 1px;
+    width: 129px;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -51px;
+    left: 802px;
+    height: 1px;
+    width: 281px;
+    content: "";
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -31px;
+    left: 56px;
+    height: 1px;
+    width: 129px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -51px;
+    left: 121px;
+    height: 1px;
+    width: 281px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
 }
 
 @media (min-width: $tablet-width) {
