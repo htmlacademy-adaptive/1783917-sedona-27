@@ -387,6 +387,7 @@
 @media (min-width: $tablet-width) {
   .photo__card-wrapper--road {
     background-color: rgb(234, 234, 234);
+    padding: 21px 21px 12px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -400,9 +401,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .photo__card-wrapper--plant {
+    padding: 21px 21px 12px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .photo__card-wrapper--plant {
     padding: 18px 20px 12px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo__card-wrapper--bridge {
+    padding: 21px 21px 12px;
   }
 }
 

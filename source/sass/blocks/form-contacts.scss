@@ -1,6 +1,7 @@
 .form-contacts {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -9,7 +10,7 @@
     justify-content: space-between;
     width: 648px;
     height: auto;
-    margin-bottom: 87px;
+    margin-bottom: 45px;
   }
 }
 
