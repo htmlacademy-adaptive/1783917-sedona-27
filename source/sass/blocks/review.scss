@@ -79,7 +79,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 520px;
+    width: 576px;
     margin: 0;
     padding: 0 0 0 0;
     box-sizing: border-box;
@@ -106,7 +106,7 @@
 
 @media (min-width: $tablet-width) {
   .review__item {
-    margin-bottom: 34px;
+    margin-bottom: 11px;
     padding: 0;
     //height: 31px;
 
@@ -259,7 +259,7 @@
     display: grid;
     width: 768px;
     margin: 0 auto;
-    padding: 0 92px 14px 160px;
+    padding: 0 198px 14px 103px;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1px;

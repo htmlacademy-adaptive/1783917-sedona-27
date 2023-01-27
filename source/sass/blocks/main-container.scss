@@ -140,13 +140,10 @@
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
-    padding: 0;
-    padding-bottom: 35px;
     margin: 0;
-
-    br {
-      display: none;
-    }
+    width: 484px;
+    box-sizing: border-box;
+    padding: 0;
   }
 }
 
@@ -158,8 +155,7 @@
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
-    padding: 0;
-    padding-bottom: 35px;
+    padding: 0 32px 10px 6px;
     margin: 0;
   }
 }
@@ -179,30 +175,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-container__description {
-    width: 484px;
-
-    br {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-container__description {
-    width: 484px;
-    box-sizing: border-box;
-    padding: 0;
-    //margin-left: -51px;
-
-    br {
-      display: block;
-    }
+.main-container__description-hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
 
     @media (min-width: $desktop-width) {
-      padding: 0 32px 10px 6px;
-      margin: 0;
+      display: block;
     }
   }
 }

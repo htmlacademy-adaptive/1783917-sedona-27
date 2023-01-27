@@ -174,10 +174,11 @@
 
 @media (min-width: $tablet-width) {
   .review__field-group--radiobuttons {
-    padding: 20px 111px 27px 114px;
+    padding: 12px 55px 27px;
     margin: 0 auto;
     width: 768px;
     box-sizing: border-box;
+    border: none;
   }
 }
 

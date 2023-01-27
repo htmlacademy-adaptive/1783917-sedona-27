@@ -21,7 +21,7 @@
     <a class="main-header__logo">
       <img src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -112,23 +112,23 @@
           <ul class="review__list review__list--radiobuttons">
             <li class="review__item">
 
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="positive" checked>
-                <span class="control__mark"></span>
+              <label class="control custom-radio">
+                <input class="control__input" type="radio" name="impression" value="positive" checked>
+                <!--<span class="control__mark"></span>-->
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
-            <li class="review__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="negative">
-                <span class="control__mark"></span>
+            <li class="review__item ">
+              <label class="control custom-radio">
+                <input class="control__input" type="radio" name="impression" value="negative">
+                <!--<span class="control__mark"></span>-->
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="review__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="unknown">
-                <span class="control__mark"></span>
+              <label class="control custom-radio">
+                <input class="control__input" type="radio" name="impression" value="unknown "disabled>
+                <!--<span class="control__mark"></span>-->
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -140,30 +140,30 @@
           <legend class="review__title review__title--checkboxes">Посещенные достопримечательности:</legend>
           <ul class="review__list review__list--checkboxes">
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked>
-                <span class="control__mark"></span>
+              <label class="control custom-checkboxes">
+                <input class="control__input " type="checkbox" name="bridge-devil" checked>
+                <!-- <span class="control__mark"></span> -->
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked>
-                <span class="control__mark"></span>
+              <label class="control custom-checkboxes">
+                <input class="control__input " type="checkbox" name="mount-bell" checked>
+                <!-- <span class="control__mark"></span> -->
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked>
-                <span class="control__mark"></span>
+              <label class="control custom-checkboxes">
+                <input class="control__input" type="checkbox" name="slide-park" checked>
+                <!-- <span class="control__mark"></span> -->
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes review__item--rocks">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
-                <span class="control__mark"></span>
+              <label class="control custom-checkboxes">
+                <input class="control__input" type="checkbox" name="red-rocks">
+                <!-- <span class="control__mark"></span> -->
                 <span class="control__label">Красные скалы</span>
               </label>
             </li>
