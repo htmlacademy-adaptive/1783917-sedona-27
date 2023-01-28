@@ -52,7 +52,6 @@
 .photo__catalog__title {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -121,7 +120,7 @@
 
 .photo__catalog--3 {
   width: 280px;
-  padding: 0 0 13px;
+  padding: 0 0 9px;
 }
 
 @media (min-width: $tablet-width) {
@@ -184,7 +183,7 @@
   margin-bottom: 24px;
   border-bottom: 1px solid #e5e5e5;
   width: 320px;
-  padding: 0 20px 12px;
+  padding: 0 20px 10px;
   box-sizing: border-box;
 }
 
@@ -231,7 +230,7 @@
 .photo__card__item:nth-child(4) {
   border-bottom: 1px solid #e5e5e5;
   width: 320px;
-  padding: 0 20px 14px;
+  padding: 0 20px 11px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -272,36 +271,55 @@
 @media (min-width: $tablet-width) {
   .like-icon--1 {
     margin: -6px 0 0 3px;
+    padding: 7px 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .like-icon--1 {
-    margin: -10px 0 0 9px;
+    margin: -6px 0 0 9px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .like-icon--2 {
-    margin: -5px 0 0 12px;
+    margin: 0 0 0 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like-icon--2 {
+    margin: 4px 0 0 13px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .like-icon--3 {
-    margin: -5px 0 0 20px;
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like-icon--3 {
+    margin: 5px 0 0 18px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .like-icon--4 {
-    margin: -5px 0 0 12px;
+    margin: 0 0 0 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like-icon--4 {
+    margin: 5px 0 0 12px;
   }
 }
 
 .icon-wrapper {
   width: 97px;
-  margin-top: -1px;
+  margin-top: 0;
   display: flex;
 }
 
@@ -358,7 +376,7 @@
       height: 80px;
       position: absolute;
       box-sizing: border-box;
-      padding: 23px 25px 13px 21px;
+      padding: 25px 25px 13px 21px;
     }
   }
 }
@@ -387,7 +405,7 @@
 @media (min-width: $tablet-width) {
   .photo__card-wrapper--road {
     background-color: rgb(234, 234, 234);
-    padding: 21px 21px 12px;
+    padding: 23px 21px 10px;
 
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -396,20 +414,20 @@
       margin-top: -78px;
       background-color: rgba(0, 0, 0, 0.3);
       box-sizing: border-box;
-      padding: 16px 20px 12px 20px;
+      padding: 16px 18px 16px 25px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .photo__card-wrapper--plant {
-    padding: 21px 21px 12px;
+    padding: 23px 21px 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo__card-wrapper--plant {
-    padding: 18px 20px 12px 20px;
+    padding: 17px 21px 14px 26px;
   }
 }
 
@@ -421,7 +439,7 @@
 
 @media (min-width: $desktop-width) {
   .photo__card-wrapper--bridge {
-    padding: 17px 20px 12px 20px;
+    padding: 17px 20px 15px 25px;
   }
 }
 
@@ -440,14 +458,13 @@
   height: 20px;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: rgb(0, 0, 0);
   z-index: 2;
   cursor: pointer;
   font-weight: 700;
   box-sizing: border-box;
-  padding: -17px 38px;
-  margin: 11px 9px;
-  margin-bottom: -48px;
+  padding: 0 1px;
+  margin: 10px 9px -48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -487,12 +504,12 @@
     cursor: pointer;
     font-weight: 700;
     box-sizing: border-box;
-    margin: 12px 9px;
-    margin-bottom: -44px;
+    margin: 10px 12px 0 0;
+    padding: 0;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
-      margin: 12px 6px;
+      margin: 11px 7px 0 0;
     }
   }
 }
@@ -508,11 +525,11 @@
     cursor: pointer;
     font-weight: 700;
     box-sizing: border-box;
-    margin: 13px 6px;
-    margin-bottom: -44px;
+    margin: 10px 6px -39px 0;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
+      margin: 13px 4px -43px 0;
     }
   }
 }
@@ -528,11 +545,11 @@
     cursor: pointer;
     font-weight: 700;
     box-sizing: border-box;
-    margin: 13px 6px;
-    margin-bottom: -44px;
+    margin: 10px 10px -40px 3px;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
+      margin: 15px 7px -40px 4px;
     }
   }
 }
@@ -548,11 +565,11 @@
     cursor: pointer;
     font-weight: 700;
     box-sizing: border-box;
-    margin: 13px 6px;
-    margin-bottom: -44px;
+    margin: 10px 6px -44px 0;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
+      margin: 14px 5px -44px 0;
     }
   }
 }

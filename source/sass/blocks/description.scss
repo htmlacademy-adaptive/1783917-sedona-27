@@ -1,17 +1,15 @@
 .description__title {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .description__subtitle {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -24,7 +22,6 @@
 
 @media (min-width: $tablet-width) {
   .description__subtitle {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -38,7 +35,6 @@
 
 @media (min-width: $desktop-width) {
   .description__subtitle {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -54,7 +50,6 @@
   .description__title--form {
     margin: 0;
     padding: 0;
-    font-family: $title;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
@@ -69,7 +64,6 @@
   .description__title--form {
     margin: 0;
     padding: 0;
-    font-family: $title;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;

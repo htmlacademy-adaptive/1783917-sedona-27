@@ -51,7 +51,6 @@
 }
 
 .intro__slogan {
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -63,7 +62,6 @@
 
 @media (min-width: $tablet-width) {
   .intro__slogan {
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -76,7 +74,6 @@
 }
 
 .intro__description {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -88,7 +85,6 @@
 
 @media (min-width: $tablet-width) {
   .intro__description {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -102,7 +98,6 @@
 
 @media (min-width: $desktop-width) {
   .intro__description {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

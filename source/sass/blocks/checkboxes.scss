@@ -1,19 +1,19 @@
 .checkboxes {
   width: 320px;
-  padding: 12px 12px 12px 20px;
+  padding: 12px 12px 12px 15px;
   box-sizing: border-box;
-  margin: 0 auto 11px;
+  margin: 0 auto 21px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .checkboxes {
     width: 768px;
-    margin: 0 auto;
     height: auto;
-    border: none;
-    padding: 26px 23px 3px;
+    border: 0;
+    padding: 13px 33px 16px;
     box-sizing: border-box;
-    margin-bottom: -12px;
+    margin-bottom: 10px;
   }
 }
 
@@ -32,7 +32,6 @@
 .checkboxes__title {
   margin: 0;
   padding: 0 10px;
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -45,7 +44,6 @@
   .checkboxes__title {
     width: 308px;
     margin: 0 auto;
-    font-family: $title;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -60,7 +58,6 @@
     width: 308px;
     margin: 0 auto;
     padding-bottom: 53px;
-    font-family: $title;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -130,69 +127,25 @@
     margin-left: -17px;
   }
 }
-/*
-.control__input[type="checkbox"]:checked + .control__mark {
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  padding: 0 auto;
-  background-position: center;
-  color: rgb(0, 0, 0);
-  background-color: rgb(242, 242, 242);
-}
-
-.control__input[type="checkbox"]:checked + .control__mark:hover {
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  padding: 0 auto;
-  background-position: center;
-  color: rgb(0, 0, 0);
-  background-color: rgb(229, 229, 229);
-}
-
-.control__input[type="checkbox"]:not(:disabled):active + .control__mark {
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  opacity: 30%;
-  padding: 0 auto;
-  background-position: center;
-  color: rgb(0, 0, 0);
-  background-color: rgb(242, 242, 242);
-  cursor: default;
-}
-
-.control__input[type="checkbox"]:not(:disabled) + .control__mark:active {
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  padding: 0 auto;
-  background-position: center;
-  color: rgb(0, 0, 0);
-  background-color: rgb(213, 213, 213);
-  cursor: default;
-}*/
 
 .checkboxes-border::after {
   position: absolute;
-  top: -94px;
+  top: -86px;
   left: -1px;
   height: 1px;
   width: 320px;
-  background-color: rgb(229, 229, 229);
+  background-color: #dbdbdb;
   content: "";
 }
 
 @media (min-width: $tablet-width) {
   .checkboxes-border::after {
     position: absolute;
-    right: 35px;
     top: -42px;
-    left: 80px;
+    left: 60px;
     height: 1px;
     width: 123px;
-    background-color: rgb(229, 229, 229);
+    background-color: #dbdbdb;
     content: "";
   }
 }
@@ -200,11 +153,11 @@
 @media (min-width: $desktop-width) {
   .checkboxes-border::after {
     position: absolute;
-    top: -39px;
+    top: -41px;
     left: 120px;
     height: 1px;
     width: 281px;
-    background-color: rgb(229, 229, 229);
+    background-color: #dbdbdb;
     content: "";
   }
 }
@@ -213,10 +166,10 @@
   .checkboxes-border::before {
     position: absolute;
     top: -42px;
-    left: 607px;
+    left: 585px;
     height: 1px;
     width: 123px;
-    background-color: rgb(229, 229, 229);
+    background-color: #dbdbdb;
     content: "";
   }
 }
@@ -224,31 +177,31 @@
 @media (min-width: $desktop-width) {
   .checkboxes-border::before {
     position: absolute;
-    top: -39px;
+    top: -41px;
     left: 800px;
     height: 1px;
     width: 281px;
-    background-color: rgb(229, 229, 229);
+    background-color: #dbdbdb;
     content: "";
   }
 }
 
-//НОВЫЕ СТИЛИ ДЛЯ ЧЕКБОКСОВ
-.custom-checkboxes > .control__input {
+/* для элемента input c type="checkbox" */
+.custom-checkboxes {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-/* для элемента label связанного с .custom-radio */
-.custom-checkboxes > .control__label {
+/* для элемента label связанного с .custom-checkboxes */
+.custom-checkboxes + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
 /* создание в label псевдоэлемента  before со следующими стилями */
-.custom-checkboxes > .control__label::before {
+.custom-checkboxes + label::before {
   content: "";
   display: inline-block;
   width: 46px;
@@ -256,65 +209,62 @@
   flex-shrink: 0;
   flex-grow: 0;
   border-radius: 12%;
-  margin-right: 0.5em;
+  margin-right: 16px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 35% 35%;
   background-color: rgb(242, 242, 242);
 }
 
-
-/* стили при наведении курсора на радио */
-.custom-checkboxes > .control__label:not(:disabled):not(:checked):hover::before {
+/* стили при наведении курсора на чекбокс */
+.custom-checkboxes:not(:disabled) + label:hover::before {
   background-color: rgb(229, 229, 229);
 }
 
-/* стили для активной радиокнопки (при нажатии на неё) */
-.custom-checkboxes > .control__input:not(:disabled):active + .control__label::before {
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkboxes:not(:disabled):active + label::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  position: absolute;
+  left: 12px;
+}
+
+/*стили для активного чекбокса (при нажатии на него) */
+.custom-checkboxes:not(:disabled):active + label::before {
   background-color: rgb(213, 213, 213);
 }
 
-/* стили для радиокнопки, находящейся в фокусе */
-.custom-checkboxes > .control__input:focus + .control__label::before {
+/* стили для чекбокса, находящейгося в фокусе */
+.custom-checkboxes:focus + label::before {
   outline: 2px solid #939393;
 }
 
-/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-.custom-checkboxes > .control__input:focus:not(:checked) + .control__label::before {
-  border-color: #8b8b8b;
+/* стили для чекбокса, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-checkboxes:focus:not(:checked) + label::before {
+  border-color: #80bdff;
 }
 
-/* создание в label псевдоэлемента  after  со следующими стилями */
-.custom-checkboxes:active > .control__label::after {
+/* стили для чекбокса , находящейся в состоянии checked */
+.custom-checkboxes:checked + label::after {
   content: "";
   display: inline-block;
   width: 22px;
   height: 16px;
-  //border-radius: 50%;
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  // background-color: #333333;
-  opacity: 0.3;
+  //opacity: 0.3;
   position: absolute;
-  left: 56px;
-}
-/* стили для радиокнопки, находящейся в состоянии checked */
-.custom-checkboxes > .control__input:checked + .control__label::after {
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 16px;
-  //border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../img/check.svg");
-  //background-color: #333333;
-  position: absolute;
-  left: 56px;
+  left: 12px;
 }
 
 /* стили для радиокнопки, находящейся в состоянии disabled */
-.custom-checkboxes > input:disabled + span::before {
-  background-color: #0760b9;
+.custom-checkboxes:disabled + label::before {
+  background-color: #939393;
 }
