@@ -1,20 +1,3 @@
-.reviews {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 32px;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-
-    @media (min-width: $desktop-width) {
-      width: 1200px;
-      padding: 0 221px 0 217px;
-    }
-  }
-}
-
 .review__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -155,7 +138,7 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    top: -41px;
+    top: -31px;
     left: 1px;
   }
 }
@@ -167,7 +150,7 @@
     width: 123px;
     height: 1px;
     background-color: #dbdbdb;
-    top: -41px;
+    top: -31px;
     left: 527px;
   }
 }

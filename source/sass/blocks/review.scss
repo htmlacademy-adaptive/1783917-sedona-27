@@ -1,6 +1,4 @@
-
 //РЕВЬЮ ФИЛ ГРУПП
-
 .review__field-group {
   width: 320px;
   margin: 0 auto;
@@ -29,6 +27,55 @@
       border-top: none;
       margin-bottom: 0;
     }
+  }
+}
+
+.reviews {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 11px 0 0 0;
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      padding: 0 221px 0 217px;
+    }
+  }
+}
+
+.checkboxes {
+  width: 320px;
+  padding: 12px 12px 12px 15px;
+  box-sizing: border-box;
+  margin: 0 auto 21px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes {
+    width: 768px;
+    height: auto;
+    border: 0;
+    padding: 13px 33px 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes {
+    width: 1200px;
+    height: auto;
+    border-bottom: none;
+    padding: 26px 23px 15px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -78,6 +125,7 @@
   .review__field-group:nth-child(2) {
     border: none;
     position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -129,7 +177,7 @@
 }
 
 .review__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
@@ -137,7 +185,6 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 17px;
-  margin-left: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -169,7 +216,7 @@
 }
 
 .review__field-group--radiobuttons {
-  padding: 12px 6px 0 22px;
+  padding: 12px 20px 0 22px;
   margin-bottom: 34px;
 }
 
@@ -494,10 +541,20 @@
   }
 }
 
+.review__title--reviews {
+  padding: 0 6px 17px 0;
+}
+
 @media (min-width: $tablet-width) {
   .review__title--reviews {
     padding-top: 0;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--reviews {
+    padding: 0 6px 27px 0;
   }
 }
 
@@ -529,7 +586,7 @@
 }
 
 .review__title--checkboxes {
-  padding-bottom: 8px;
+  padding: 0 4px 8px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -547,9 +604,14 @@
   }
 }
 
+.review__title--info {
+  padding: 0 8px 17px 0;
+}
+
 @media (min-width: $tablet-width) {
   .review__title--info {
     margin-left: -21px;
+    padding: 0 8px 28px 0;
   }
 }
 
@@ -584,6 +646,10 @@
     gap: 33px;
     grid-template-columns: 201px 200px 181px 174px;
   }
+}
+
+.review__title--introduce {
+  padding: 0 7px 17px 0;
 }
 
 @media (min-width: $tablet-width) {
