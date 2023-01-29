@@ -42,7 +42,7 @@
 
 .advantages__list {
   background-color: #ffffff;
-  padding: 29px 19px 53px 23px;
+  padding: 29px 19px 46px 23px;
   padding-top: 29px;
   list-style: none;
   width: 320px;
@@ -113,7 +113,6 @@
 }
 
 .advantages__title {
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -124,7 +123,6 @@
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    font-family: $title;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -142,10 +140,6 @@
   color: #ffffff;
   padding-bottom: 10px;
   margin: 0 auto;
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -158,10 +152,6 @@
   .advantages__title--town {
     text-align: center;
     padding-bottom: 13px;
-
-    br {
-      display: block;
-    }
   }
 }
 
@@ -175,19 +165,13 @@
   .advantages__title--housing {
     text-align: center;
     padding: 0;
-    padding-bottom: 23px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__title--housing {
-    padding: 0 0 26px;
+    padding-bottom: 21px;
   }
 }
 
 .advantages__title--food {
   margin: 0;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   text-align: left;
 }
 
@@ -199,7 +183,6 @@
 }
 
 .advantages__description {
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -244,14 +227,14 @@
   .advantages__title--food {
     text-align: center;
     padding: 0;
-    padding-bottom: 26px;
+    padding-bottom: 22px;
   }
 }
 
 .advantages__title--gift {
   text-align: left;
   padding: 0;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -261,32 +244,14 @@
   }
 }
 
-.advantages__title--bridge {
-  //padding-top: 47px;
-
-  br {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .advantages__title--bridge {
     padding: 0;
     padding-bottom: 12px;
 
-    br {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__title--bridge {
-    padding: 0;
-    padding-bottom: 14px;
-
-    br {
-      display: block;
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-bottom: 14px;
     }
   }
 }
@@ -312,18 +277,8 @@
     padding: 0;
     border-bottom: none;
 
-    br {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__description--bridge {
-    border-bottom: none;
-
-    br {
-      display: none;
+    @media (min-width: $desktop-width) {
+      border-bottom: none;
     }
   }
 }
@@ -342,7 +297,6 @@
 }
 
 .advantages__description__number {
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -350,7 +304,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-bottom: 18px;
+  padding-bottom: 13px;
 }
 
 .advantages__description__number--town {
@@ -369,10 +323,6 @@
 .advantages__description--bridge-devil {
   color: #ffffff;
   padding: 0;
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -393,25 +343,15 @@
   margin: 0;
   color: #ffffff;
   padding-bottom: 12px;
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__title--bridge-devil {
     padding-bottom: 11px;
 
-    br {
-      display: block;
+    @media (min-width: $desktop-width) {
+      padding-bottom: 14px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__title--bridge-devil {
-    padding-bottom: 14px;
   }
 }
 
@@ -421,7 +361,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__description__number--bridge-devil {
-    padding-bottom: 27px;
+    padding-bottom: 23px;
   }
 }
 
@@ -451,10 +391,10 @@
 
 .advantages__item-list--bridge {
   box-sizing: border-box;
-  margin-bottom: -23px;
+  margin-bottom: -25px;
   position: relative;
   background-color: #eeeeee;
-  padding: 31px 32px 42px;
+  padding: 27px 32px 48px;
   display: block;
 }
 
@@ -484,14 +424,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item-list--bridge-1 {
-    padding: 42px 38px 47px;
+    padding: 51px 38px 47px;
     box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item-list--bridge-1 {
-    padding: 43px 38px 62px 43px;
+    padding: 62px 38px 43px 43px;
     box-sizing: border-box;
   }
 }
@@ -502,7 +442,7 @@
   width: 284px;
   height: 1px;
   background-color: #d6d6d6;
-  bottom: 16px;
+  bottom: 23px;
   left: 16px;
   z-index: 1;
 }
@@ -532,15 +472,15 @@
 .advantages__item--food {
   color: #000000;
   margin: 0;
-  padding-left: 46px;
+  padding-left: 43px;
   box-sizing: border-box;
-  padding-top: 5px;
+  padding-top: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item--food {
     width: 256px;
-    padding: 157px 53px 59px 51px;
+    padding: 155px 53px 63px 51px;
     box-sizing: border-box;
   }
 }
@@ -548,7 +488,7 @@
 @media (min-width: $desktop-width) {
   .advantages__item--food {
     width: 400px;
-    padding: 158px 52px 79px 53px;
+    padding: 166px 52px 75px 53px;
     box-sizing: border-box;
   }
 }
@@ -558,32 +498,33 @@
   margin: 0;
   padding-left: 42px;
   box-sizing: border-box;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 158px 26px 70px 34px;
+    padding: 152px 27px 63px 33px;
     box-sizing: border-box;
     width: 256px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding: 158px 26px 34px 26px;
+    padding: 170px 28px 34px 37px;
   }
 }
 
 .advantages__item--housing {
   color: #000000;
   margin: 0;
-  padding-left: 43px;
+  padding-left: 42px;
   box-sizing: border-box;
-  padding-top: 5px;
+  padding-top: 3px;
   display: block;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item--housing {
     width: 256px;
-    padding: 158px 32px 58px 35px;
+    padding: 158px 32px 63px 35px;
     box-sizing: border-box;
   }
 }
@@ -591,7 +532,7 @@
 @media (min-width: $desktop-width) {
   .advantages__item--housing {
     width: 400px;
-    padding: 158px 48px 34px;
+    padding: 170px 48px 34px;
     box-sizing: border-box;
   }
 }
@@ -607,10 +548,6 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
-
-      br {
-        display: none;
-      }
     }
   }
 }
@@ -618,23 +555,12 @@
 .advantages__description--gift {
   padding: 0;
   text-align: left;
-
-  br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      padding: 0 30px;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__description--gift {
-    //padding: 18px 12px;
-
-    br {
-      display: none;
-    }
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -642,10 +568,6 @@
   .advantages__description--gift {
     padding: 0;
     text-align: center;
-
-    br {
-      display: block;
-    }
   }
 }
 
@@ -674,7 +596,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
-  bottom: 202px;
+  bottom: 197px;
   left: 13px;
 }
 
@@ -689,7 +611,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40px;
-  bottom: 88px;
+  bottom: 81px;
 }
 
 //ЦВЕТНЫЕ ИКОНКИ ДЛЯ ПРЕИМУЩЕСТВ TABLET
@@ -717,7 +639,7 @@
     width: 88px;
     height: 77px;
     margin: -30px -8px;
-    left: 346px;
+    left: 347px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 81px;
@@ -733,11 +655,11 @@
     width: 88px;
     height: 77px;
     margin: -30px -8px;
-    left: 602px;
+    left: 606px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 81px;
-    top: 83px;
+    top: 91px;
   }
 }
 
@@ -754,7 +676,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 81px;
-    top: 89px;
+    top: 96px;
   }
 }
 
@@ -766,11 +688,11 @@
     width: 88px;
     height: 77px;
     margin: -30px -8px;
-    left: 564px;
+    left: 562px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 81px;
-    top: 90px;
+    top: 97px;
   }
 }
 
@@ -782,11 +704,11 @@
     width: 88px;
     height: 77px;
     margin: -30px -8px;
-    left: 963px;
+    left: 962px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 81px;
-    top: 88px;
+    top: 97px;
   }
 }
 
@@ -804,11 +726,10 @@
 }
 
 .picture {
-  margin: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: -4px;
+  margin: 0 0 -2px;
   display: block;
 }
 
@@ -910,25 +831,25 @@
 
 @media (min-width: 768px) {
   .advantages__item-list--road {
-    padding: 42px 54px 44px;
+    padding: 41px 48px 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item-list--road {
-    padding: 43px 68px 19px 70px;
+    padding: 51px 68px 19px 70px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item-list--tourists {
-    padding: 42px 46px 41px;
+    padding: 51px 33px 41px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item-list--tourists {
-    padding: 44px 52px 60px;
+    padding: 63px 52px 41px;
     box-sizing: border-box;
   }
 }
@@ -953,5 +874,67 @@
 @media (min-width: $desktop-width) {
   .advantages__item-list--tourists::after {
     display: none;
+  }
+}
+
+.advantages__hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.advantages__description-hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.bridge-devil-hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.title-bridge-hyphenation {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.title-road-hyphenation {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.tourists-hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.road-hyphenation {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }

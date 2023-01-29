@@ -18,15 +18,15 @@
 <body class="page-body">
 
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img src="img/logo-city-of-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active" href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
@@ -36,12 +36,12 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__feedback" href="form.html">
+            <a class="site-list__link site-list__feedback site-list__link--active" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__academy" href="#">
+            <a class="site-list__link site-list__academy" href="https://htmlacademy.ru">
               Html Academy
             </a>
           </li>
@@ -100,35 +100,38 @@
                 required>
             </label>
             <label for="e-mail" class="review__control">Электронная почта*:
-              <!--<span class="button-letter letter"></span>-->
+
               <input class="field field-email" placeholder="Введите e-mail" type="text" name="contact-email" id="e-mail"
                 required>
             </label>
 
           </fieldset>
         </div>
-        <fieldset class="review__field-group review__field-group--radiobuttons review__field-group--radiobuttons-border">
+        <fieldset
+          class="review__field-group review__field-group--radiobuttons review__field-group--radiobuttons-border">
           <legend class="review__title review__title--radiobuttons">Ваше общее впечатление:</legend>
           <ul class="review__list review__list--radiobuttons">
             <li class="review__item">
 
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="positive" checked>
-                <span class="control__mark"></span>
+              <input class="review__input  custom-radio" type="radio" id="radiobutton1" name="impression"
+                value="positive" checked>
+              <label for="radiobutton1" class="control ">
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
-            <li class="review__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="negative">
-                <span class="control__mark"></span>
+            <li class="review__item ">
+
+              <input class="review__input  custom-radio" type="radio" id="radiobutton2" name="impression"
+                value="negative">
+              <label for="radiobutton2" class="control ">
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="review__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="unknown">
-                <span class="control__mark"></span>
+
+              <input class="review__input  custom-radio" type="radio" id="radiobutton3" name="impression"
+                value="unknown">
+              <label for="radiobutton3" class="control ">
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -140,39 +143,39 @@
           <legend class="review__title review__title--checkboxes">Посещенные достопримечательности:</legend>
           <ul class="review__list review__list--checkboxes">
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked>
-                <span class="control__mark"></span>
+
+              <input class="review__input custom-checkboxes" type="checkbox" id="checkbox1" name="bridge-devil" checked>
+              <label for="checkbox1" class="control">
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked>
-                <span class="control__mark"></span>
+
+              <input class="review__input custom-checkboxes" type="checkbox" id="checkbox2" name="mount-bell" checked>
+              <label for="checkbox2" class="control">
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked>
-                <span class="control__mark"></span>
+
+              <input class="review__input custom-checkboxes" type="checkbox" id="checkbox3" name="slide-park" checked>
+              <label for="checkbox3" class="control">
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="review__item review__item--checkboxes review__item--rocks">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
-                <span class="control__mark"></span>
+
+              <input class="review__input custom-checkboxes" type="checkbox" id="checkbox4" name="red-rocks">
+              <label for="checkbox4" class="control">
                 <span class="control__label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__field-group reviews">
-          <legend class="review__title review__title--reviews"> <span class="decorative-line"> Опишите свои эмоции:
-            </span></legend>
+        <fieldset class="review__field-group reviews reviews-border">
+          <legend class="review__title review__title--reviews"> Опишите свои эмоции:
+          </legend>
 
           <label for="textarea" class="visually-hidden">отзыв</label>
           <textarea class="textarea" name="reviews-comment" id="textarea"

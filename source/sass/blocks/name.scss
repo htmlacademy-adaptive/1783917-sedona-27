@@ -1,7 +1,6 @@
 .name {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -17,6 +16,5 @@
 }
 
 .field::placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }

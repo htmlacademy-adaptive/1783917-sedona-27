@@ -4,6 +4,7 @@
   width: 320px;
   height: 280px;
   margin: 0 auto;
+  font-family: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +30,6 @@
 .modal__title {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -75,7 +75,6 @@
 .modal__description {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -97,7 +96,6 @@
 }
 
 .modal__failure {
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -110,6 +108,7 @@
   margin: 0 auto;
   display: block;
   cursor: pointer;
+  font-family: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,7 +120,6 @@
 @media (min-width: $desktop-width) {
   .modal__failure {
     padding: 18px 124px 14px 124px;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -148,7 +146,6 @@
 .modal__success__title {
   margin: 0;
   padding: 0;
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -189,6 +186,7 @@
   height: 323px;
   padding: 44px 21px 54px;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -214,7 +212,6 @@
 .modal__success__description {
   margin: 0;
   padding: 0 12px;
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -231,7 +228,6 @@
   .modal__success__description {
     margin: 0;
     padding: 0 20px;
-    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -248,17 +244,18 @@
 .modal__success__button {
   background-color: $accent;
   border: none;
-  padding: 18px 78px 14px 72px;
+  padding: 18px 77px 14px 72px;
   text-align: center;
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 auto;
   cursor: pointer;
+  display: block;
+  font-family: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -277,7 +274,6 @@
     background-color: #81b3d2;
     border: none;
     color: #ffffff;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;

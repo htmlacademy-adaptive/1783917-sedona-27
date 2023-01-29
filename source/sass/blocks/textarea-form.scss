@@ -1,22 +1,23 @@
 .textarea-form {
   position: relative;
+  font-family: inherit;
 }
 
 .textarea-form .reviews-button {
-  font-family: $title;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  padding: 18px 48px 13px 48px;
+  padding: 17px 48px 13px;
   color: #ffffff;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  font-family: inherit;
 }
 
 @media (min-width: $tablet-width) {
   .textarea-form .reviews-button {
-    padding: 18px 78px 13px 66px;
+    padding: 17px 71px 14px 72px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -25,7 +26,7 @@
 
 @media (min-width: $desktop-width) {
   .textarea-form .reviews-button {
-    padding: 22px 107px 13px 95px;
+    padding: 21px 101px 15px 101px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

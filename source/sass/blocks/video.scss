@@ -27,7 +27,6 @@
   margin: 0;
   padding: 0;
   padding-bottom: 27px;
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -39,7 +38,6 @@
   .video__title {
     margin: 0 auto;
     padding: 0;
-    font-family: $title;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
@@ -53,20 +51,18 @@
   .video__title {
     margin: 0 auto;
     padding: 0;
-    font-family: $title;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 29px;
+    padding-bottom: 33px;
   }
 }
 
 .video__description {
   margin: 0 auto;
   padding: 0 23px 38px 21px;
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -77,9 +73,8 @@
 @media (min-width: $tablet-width) {
   .video__description {
     width: 445px;
-    margin: 0 auto;
     padding: 0 93px 80px;
-    margin-bottom: 11px;
+    margin: 0 auto 8px;
   }
 }
 
@@ -114,16 +109,16 @@
 
 .video-button {
   position: absolute;
-  display: block;
-  left: 143px;
-  bottom: 72px;
-  cursor: pointer;
   background-image: url("../img/video-button-mobile.svg");
   width: 48px;
   height: 54px;
   background-color: transparent;
   background-repeat: no-repeat;
   padding: 0;
+  display: block;
+  left: 136px;
+  bottom: 69px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,7 +126,7 @@
     position: absolute;
     display: block;
     left: 300px;
-    bottom: 236px;
+    bottom: 233px;
     width: 48px;
     height: 54px;
     background-color: transparent;
@@ -145,7 +140,7 @@
     position: absolute;
     display: block;
     left: 376px;
-    bottom: 289px;
+    bottom: 293px;
   }
 }
 

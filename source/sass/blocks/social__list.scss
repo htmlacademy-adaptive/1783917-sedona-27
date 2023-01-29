@@ -26,6 +26,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .social__list--index {
+    padding-top: 14px;
+    padding-bottom: 5px;
+    padding-left: 114px;
+    padding-right: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list--index {
+    padding: 14px 62px 5px 124px;
+  }
+}
+
 .social__item {
   width: 48px;
   height: 48px;

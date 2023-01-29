@@ -1,10 +1,355 @@
+//РЕВЬЮ ФИЛ ГРУПП
+.review__field-group {
+  width: 320px;
+  margin: 0 auto;
+  padding: 4px 12px 20px 20px;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+  border: none;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group {
+    width: 320px;
+    margin: -42px auto;
+    padding: 0 2px 0 1px;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: none;
+    margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+      margin: 0;
+      padding: 0;
+      border-right: none;
+      border-top: none;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.reviews {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 11px 0 0 0;
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      padding: 0 221px 0 217px;
+    }
+  }
+}
+
+.checkboxes {
+  width: 320px;
+  padding: 12px 12px 12px 15px;
+  box-sizing: border-box;
+  margin: 0 auto 21px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .checkboxes {
+    width: 768px;
+    height: auto;
+    border: 0;
+    padding: 13px 33px 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkboxes {
+    width: 1200px;
+    height: auto;
+    border-bottom: none;
+    padding: 26px 23px 15px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.review__field-group--1 {
+  padding-bottom: 29px;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--1 {
+    margin-right: 4px;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--1 {
+    margin-right: -12px;
+  }
+}
+
+.review__field-group--1::after {
+  background-color: #dbdbdb;
+  position: absolute;
+  top: -66px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--1::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--1::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group:nth-child(2) {
+    border: none;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group:nth-child(1) {
+    padding-right: 63px;
+    border-right: 1px solid #dbdbdb;
+    height: auto;
+  }
+}
+
+.review__field-group--2 {
+  padding-bottom: 19px;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--2 {
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--2 {
+    padding-left: 75px;
+  }
+}
+
+.review__field-group--2::after {
+  background-color: #dbdbdb;
+  position: absolute;
+  top: -69px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--2::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--2::after {
+    background-color: transparent;
+  }
+}
+
+.review__title {
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-left: 64px;
+  }
+}
+
+.review__field-group--radiobuttons {
+  padding: 12px 20px 0 22px;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons {
+    padding: 14px 23px 34px;
+    margin: 0 auto;
+    width: 768px;
+    box-sizing: border-box;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons {
+    width: 1200px;
+    height: auto;
+    padding: 18px 33px 33px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -31px;
+    left: 56px;
+    height: 1px;
+    width: 129px;
+    background-color: rgb(229, 229, 229);
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -51px;
+    left: 121px;
+    height: 1px;
+    width: 281px;
+    background-color: #dbdbdb;
+    content: "";
+  }
+}
+
+.review__field-group--radiobuttons-border::before {
+  position: absolute;
+  top: -60px;
+  left: -1px;
+  height: 1px;
+  width: 320px;
+  background-color: #dbdbdb;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -31px;
+    left: 584px;
+    height: 1px;
+    width: 129px;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: -51px;
+    left: 802px;
+    height: 1px;
+    width: 281px;
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -28px;
+    left: 60px;
+    height: 1px;
+    width: 123px;
+    background-color: #dbdbdb;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::after {
+    position: absolute;
+    top: -39px;
+    left: 121px;
+    height: 1px;
+    width: 281px;
+    background-color: #dbdbdb;
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: #dbdbdb;
+    position: absolute;
+    top: -28px;
+    left: 585px;
+    height: 1px;
+    width: 123px;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__field-group--radiobuttons-border::before {
+    background-color: #dbdbdb;
+    position: absolute;
+    top: -39px;
+    left: 801px;
+    height: 1px;
+    width: 281px;
+    content: "";
+  }
+}
+
+//REVIEW
 .review__header {
   position: relative;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 39px;
   height: 146px;
-  padding-bottom: 37px;
+  padding: 38px 0 38px;
   width: 320px;
 }
 
@@ -23,7 +368,6 @@
 .review__control {
   margin: 0 0 16px;
   padding: 0;
-  font-family: $title;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -34,7 +378,6 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 16px;
     padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -74,15 +417,20 @@
   }
 }
 
+.review__list--radiobuttons {
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .review__list--radiobuttons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 520px;
-    margin: 0;
-    padding: 0 0 0 0;
+    padding: 0 44px 0 74px;
     box-sizing: border-box;
+    width: 711px;
+    margin: 0;
   }
 }
 
@@ -91,35 +439,34 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 856px;
+    width: 1008px;
     height: auto;
     margin: 0 auto;
-    padding: 0 3px 0 17px;
+    padding: 2px 9px 0 77px;
     box-sizing: border-box;
   }
 }
 
 .review__item {
-  padding-bottom: 36px;
+  padding-bottom: 11px;
   list-style: none;
 }
 
 @media (min-width: $tablet-width) {
   .review__item {
-    margin-bottom: 34px;
+    margin-bottom: 11px;
     padding: 0;
-    //height: 31px;
+    width: 50%;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 16px;
       padding: 0;
-      //height: 31px;
+      width: 33%;
     }
   }
 }
 
 .review__note {
-  font-family: $title;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
@@ -132,7 +479,6 @@
 
 @media (min-width: $tablet-width) {
   .review__note {
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -149,7 +495,6 @@
 
 @media (min-width: $desktop-width) {
   .review__note {
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -184,36 +529,48 @@
 
 @media (min-width: $tablet-width) {
   .review__title {
-    margin: 0;
     padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 27px;
-    margin-left: 0;
     padding-top: 44px;
+    margin: 0 auto;
   }
+}
+
+.review__title--reviews {
+  padding: 0 6px 17px 0;
 }
 
 @media (min-width: $tablet-width) {
   .review__title--reviews {
-    padding-top: 13px;
+    padding-top: 0;
+    margin: 0 auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--reviews {
+    padding: 0 6px 27px 0;
+  }
+}
+
+.review__title--radiobuttons {
+  padding-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .review__title--radiobuttons {
     padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     padding-top: 0;
     display: block;
     margin: 0 auto;
@@ -222,16 +579,21 @@
 
 @media (min-width: $desktop-width) {
   .review__title--radiobuttons {
-    padding-bottom: 36px;
-    padding-top: 25px;
-    padding-right: 8px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    padding-right: 0;
   }
+}
+
+.review__title--checkboxes {
+  padding: 0 4px 8px 0;
 }
 
 @media (min-width: $tablet-width) {
   .review__title--checkboxes {
     padding: 0 0 14px;
     width: 308px;
+    margin: 0 auto;
   }
 }
 
@@ -242,9 +604,14 @@
   }
 }
 
+.review__title--info {
+  padding: 0 8px 17px 0;
+}
+
 @media (min-width: $tablet-width) {
   .review__title--info {
     margin-left: -21px;
+    padding: 0 8px 28px 0;
   }
 }
 
@@ -254,12 +621,15 @@
   }
 }
 
+.review__list--checkboxes {
+  padding: 0 6px 0 6px;
+}
+
 @media (min-width: $tablet-width) {
   .review__list--checkboxes {
     display: grid;
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 92px 14px 160px;
+    width: 648px;
+    padding: 0 54px 0 84px;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1px;
@@ -269,13 +639,17 @@
 @media (min-width: $desktop-width) {
   .review__list--checkboxes {
     display: grid;
-    width: 999px;
+    width: 1039px;
     margin: 0 auto;
-    padding: 28px 94px 14px 83px;
+    padding: 19px 94px 11px 84px;
     box-sizing: border-box;
     gap: 33px;
-    grid-template-columns: 204px 202px 184px 166px;
+    grid-template-columns: 201px 200px 181px 174px;
   }
+}
+
+.review__title--introduce {
+  padding: 0 7px 17px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -290,5 +664,11 @@
   .review__title--introduce {
     padding-left: 61px;
     padding-bottom: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__item--checkboxes {
+    width: 200px;
   }
 }

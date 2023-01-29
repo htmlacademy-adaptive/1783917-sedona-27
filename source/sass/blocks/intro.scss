@@ -17,6 +17,7 @@
     z-index: 1;
     left: 0;
     background-position: center;
+    top: 190px;
   }
 }
 
@@ -50,7 +51,6 @@
 }
 
 .intro__slogan {
-  font-family: $title;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -62,7 +62,6 @@
 
 @media (min-width: $tablet-width) {
   .intro__slogan {
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -70,12 +69,11 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
   }
 }
 
 .intro__description {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -87,7 +85,6 @@
 
 @media (min-width: $tablet-width) {
   .intro__description {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -96,16 +93,11 @@
     padding: 0;
     padding-bottom: 35px;
     margin: 0;
-
-    br {
-      display: none;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro__description {
-    font-family: $title;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -114,10 +106,6 @@
     padding: 0;
     padding-bottom: 35px;
     margin: 0;
-
-    br {
-      display: none;
-    }
   }
 }
 
